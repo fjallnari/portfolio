@@ -1,0 +1,16 @@
+---
+interface Props {
+	id: string;
+    title: string;
+	body: string;
+	tags: string[];
+}
+
+const { id, title, body, tags } = Astro.props;
+---
+
+<li class="rounded shadow bg-oxford-800">
+    {{ title }}
+    {{ body }}
+    {{ tags }}
+</li>
