@@ -28,6 +28,21 @@ const TAGS: Record<string, { title: string, color: string, icon: string }> = {
         title: 'Tailwind',
         color: '#06b6d4',
         icon: 'vscode-icons:file-type-tailwind',
+    },
+    'cloudinary': {
+        title: 'Cloudinary',
+        color: '#f5a623',
+        icon: 'logos:cloudinary-icon',
+    },
+    'canvas': {
+        title: 'Canvas',
+        color: '#f5a623',
+        icon: 'mdi:canvas',
+    },
+    'discord': {
+        title: 'Discord',
+        color: '#7289da',
+        icon: 'logos:discord-icon',
     }
 }
 

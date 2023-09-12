@@ -12,4 +12,7 @@
             <ProjectCard {project} />
         {/each}
     {/if}
+    {#if $currentNav === "blog"}
+        <p class="lg:ml-8">Moonlight drowns out all but the brightest stars.</p>
+    {/if}
 </ul>
