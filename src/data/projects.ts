@@ -2,8 +2,16 @@ const PROJECTS = [
     {
         id: "morii-vtt",
         title: "Morii VTT",
-        body: "A virtual tabletop for playing tabletop RPGs online.",
-    }
+        body: "Web-based half-vtt for playing TTRPGs. Currently supports 5E, Cairn and Shadowdark.",
+        tags: ["svelte", "node", "mongodb"]
+    },
+    {
+        id: "ttrpg-compass",
+        title: "TTRPG Compass",
+        body: "Web-based tool to browse and compare ttrpg systems",
+        tags: ["svelte", "tailwind", "go", "redis"]
+    },
+    
 ]
 
 export default PROJECTS;

@@ -1,8 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ProjectCard from '../components/ProjectCard.astro';
 import NavButton from '../components/NavButton.svelte';
-import PROJECTS from '../data/projects.ts';
+import ContentRouter from '../components/ContentRouter.svelte';
 
 ---
 
@@ -18,11 +17,7 @@ import PROJECTS from '../data/projects.ts';
 				<NavButton title="blog" client:load />
 				<NavButton title="about" client:load />
 			</div>
-			<ul>
-				{PROJECTS.map((item) => (
-					<ProjectCard {...item} />
-				))}
-			</ul>
+			<ContentRouter client:load />
 		</div>
 	</main>
 </Layout>
