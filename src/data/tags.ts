@@ -1,49 +1,49 @@
-const TAGS: Record<string, { title: string, color: string, icon: string }> = {
-    'svelte': {
+const TAGS: Record<string, { title: string; color: string; icon: string }> = {
+    svelte: {
         title: 'Svelte',
         color: '#ff3e00',
-        icon: 'vscode-icons:file-type-svelte',
+        icon: 'vscode-icons:file-type-svelte'
     },
-    'node': {
+    node: {
         title: 'Node.js',
         color: '#026e00',
-        icon: 'vscode-icons:file-type-node',
+        icon: 'vscode-icons:file-type-node'
     },
-    'mongodb': {
+    mongodb: {
         title: 'MongoDB',
         color: '#13aa52',
-        icon: 'vscode-icons:file-type-mongo',
+        icon: 'vscode-icons:file-type-mongo'
     },
-    'go': {
+    go: {
         title: 'Go',
         color: '#00a2ff',
-        icon: 'vscode-icons:file-type-go',
+        icon: 'vscode-icons:file-type-go'
     },
-    'redis': {
+    redis: {
         title: 'Redis',
         color: '#ff0000',
-        icon: 'devicon:redis',
+        icon: 'devicon:redis'
     },
-    'tailwind': {
+    tailwind: {
         title: 'Tailwind',
         color: '#06b6d4',
-        icon: 'vscode-icons:file-type-tailwind',
+        icon: 'vscode-icons:file-type-tailwind'
     },
-    'cloudinary': {
+    cloudinary: {
         title: 'Cloudinary',
         color: '#f5a623',
-        icon: 'logos:cloudinary-icon',
+        icon: 'logos:cloudinary-icon'
     },
-    'canvas': {
+    canvas: {
         title: 'Canvas',
         color: '#f5a623',
-        icon: 'mdi:canvas',
+        icon: 'mdi:canvas'
     },
-    'discord': {
+    discord: {
         title: 'Discord',
         color: '#7289da',
-        icon: 'logos:discord-icon',
+        icon: 'logos:discord-icon'
     }
-}
+};
 
 export default TAGS;
