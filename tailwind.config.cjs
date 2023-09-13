@@ -29,7 +29,9 @@ module.exports = {
                 secondary: '#F2F2F2'
             },
             fontFamily: {
-                montserrat: ['Montserrat Variable', 'sans-serif']
+                montserrat: ['Montserrat Variable', 'sans-serif'],
+                lora: ['Lora Variable', 'serif'],
+                ovo: ['Ovo', 'serif']
             }
         }
     },
