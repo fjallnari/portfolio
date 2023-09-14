@@ -4,6 +4,7 @@
     export let project: ProjectInterface;
 
     let images = project.images;
+    let scrollY = 0;
 
     const swapImages = (idxA: number, idxB: number) => {
         images = images.map((img, idx) => {
@@ -19,7 +20,7 @@
         if (imgToZoom === null) return;
 
         const x = event.clientX - imgToZoom.offsetLeft;
-        const y = event.clientY - imgToZoom.offsetTop;
+        const y = event.clientY - imgToZoom.offsetTop + scrollY;
         
         imgToZoom.style.transformOrigin = `${x}px ${y}px`;
         imgToZoom.style.transform = "scale(2.5)";
@@ -32,6 +33,8 @@
     }
 
 </script>
+
+<svelte:window bind:scrollY />
 
 <div class="grid gap-4">
     <div class="h-full w-full overflow-hidden shadow">
