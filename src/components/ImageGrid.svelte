@@ -1,7 +1,9 @@
 <script lang="ts">
-    export let projectID: string;
+    import type ProjectInterface from "../interfaces/ProjectInterface";
 
-    let images = [1, 2, 3];
+    export let project: ProjectInterface;
+
+    let images = project.images;
 
     const swapImages = (idxA: number, idxB: number) => {
         images = images.map((img, idx) => {
@@ -10,7 +12,7 @@
             return img;
         });
     }
-
+    // sveltified the js+css version from https://www.cssscript.com/image-zoom-hover-effect/
     let imgToZoom: HTMLImageElement | null = null;
 
     function onZoom(event: MouseEvent) {
@@ -39,31 +41,19 @@
             on:mouseleave={offZoom}
             on:focus={() => {}}
             class="h-full w-full rounded-sm origin-center-center object-cover"
-            src="/images/{projectID}/{images[0]}.png"
+            src="/images/{project.id}/{images[0]}.png"
             alt=""
         >
     </div>
-    <div class="grid grid-cols-2 gap-4">
-        <button class="w-fit shadow" on:click={() => swapImages(0, 1)}>
-            <img 
-                class="h-auto max-h-56 max-w-full rounded-sm"
-                src="/images/{projectID}/{images[1]}.png" 
-                alt=""
-            >
-        </button>
-        <button class="shadow" on:click={() => swapImages(0, 2)}>
-            <img 
-                class="h-auto max-h-56 max-w-full rounded-sm"
-                src="/images/{projectID}/{images[2]}.png"
-                alt=""
-            >
-        </button>
-        <!-- <button on:click={() => swapImages(0, 3)}>
-            <img 
-                class="h-auto max-w-full rounded-sm"
-                src="/images/{projectID}/{images[3]}.png"
-                alt=""
-            >
-        </button> -->
+    <div class="grid grid-cols-{images.length - 1} gap-4">
+        {#each images.slice(1) as image, idx}
+            <button class="w-fit shadow" on:click={() => swapImages(0, idx + 1)}>
+                <img 
+                    class="h-auto max-h-56 max-w-full rounded-sm"
+                    src="/images/{project.id}/{image}.png"
+                    alt=""
+                >
+            </button>
+        {/each}
     </div>
 </div>

@@ -8,4 +8,5 @@ export default interface ProjectInterface {
     repo?: string;
     website?: string;
     tags: string[];
+    images: string[];
 }

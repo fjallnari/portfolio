@@ -20,7 +20,7 @@ const project = PROJECTS.find((project) => project.id === projectID);
 			<div class="flex flex-row gap-4">
 				<ProjectTags tags={project?.tags} client:load />
 			</div>
-			<ImageGrid {projectID} client:load />
+			<ImageGrid {project} client:load />
 			<h2 class="text-alabaster text-xl">About</h2>
 			<p class="font-ovo pb-8">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu diam nisl. Mauris tempus vulputate leo, ut vestibulum dolor egestas eu. Nullam in dolor in arcu iaculis commodo ac ac odio. Duis sodales nisi semper ligula sodales, eget aliquet nulla vestibulum. Aenean id orci varius, aliquet purus vitae, condimentum est. Vivamus vestibulum arcu rhoncus, tincidunt nunc a, eleifend quam. Vestibulum at lacus congue enim rhoncus dapibus. Aliquam blandit luctus ligula, vitae malesuada ante egestas at. Proin feugiat venenatis purus, vel consequat nisl bibendum a. Sed hendrerit hendrerit nibh, quis congue ligula consequat nec. 

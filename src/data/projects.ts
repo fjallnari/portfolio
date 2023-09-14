@@ -7,7 +7,8 @@ const PROJECTS = [
         from: '2023',
         repo: 'https://github.com/fjallnari/ttrpg-compass',
         website: 'https://compass.fjallnari.com/',
-        tags: ['svelte', 'tailwind', 'go', 'redis']
+        tags: ['svelte', 'tailwind', 'go', 'redis'],
+        images: ['similarity', 'filters', 'simple']
     },
     {
         id: 'shadowtorch',
@@ -17,7 +18,8 @@ const PROJECTS = [
         from: '2023',
         repo: 'https://github.com/fjallnari/shadowtorch',
         website: 'https://shadowtorch.vercel.app/',
-        tags: ['svelte', 'tailwind']
+        tags: ['svelte', 'tailwind'],
+        images: ['ambient', 'settings', 'overview']
     },
     {
         id: 'morii-vtt',
