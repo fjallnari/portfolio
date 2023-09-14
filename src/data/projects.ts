@@ -22,7 +22,7 @@ const PROJECTS = [
     {
         id: 'morii-vtt',
         title: 'Morii VTT',
-        description: 'Half-vtt (i.e. no maps) for playing TTRPGs. It currently supports D&D 5E, Cairn and Shadowdark.',
+        description: 'Half-vtt (i.e. no maps) for playing tabletop RPGs. It currently supports D&D 5E, Cairn and Shadowdark.',
         body: '',
         from: '2022',
         to: '2023',
@@ -39,7 +39,7 @@ const PROJECTS = [
         to: '2023',
         repo: 'https://github.com/fjallnari/gw2-cartographer',
         website: 'https://gw2-cartographer.fjallnari.com/',
-        tags: ['svelte', 'tailwind', 'canvas', 'cloudinary']
+        tags: ['svelte', 'tailwind', 'canvas']
     },
     {
         id: 'spotter-bot',

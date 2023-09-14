@@ -32,6 +32,9 @@ module.exports = {
                 montserrat: ['Montserrat Variable', 'sans-serif'],
                 lora: ['Lora Variable', 'serif'],
                 ovo: ['Ovo', 'serif']
+            },
+            transformOrigin: {
+                'center-center': 'center center'
             }
         }
     },

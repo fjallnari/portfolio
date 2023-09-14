@@ -7,7 +7,7 @@
 </script>
 
 {#each tags as tag}
-    <div class="flex flex-row justify-center items-center gap-1 rounded">
+    <div class="flex flex-row justify-center items-center gap-1 rounded"> <!-- bg-oxford-700 py-1 px-2-->
         <Icon class="w-4 h-4" icon={TAGS[tag].icon} />
         <div class="text-sm">{TAGS[tag].title}</div>
     </div>

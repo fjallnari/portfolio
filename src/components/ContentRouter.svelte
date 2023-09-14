@@ -6,7 +6,7 @@
 
 </script>
 
-<ul class="flex flex-col justify-center align-center w-full gap-4">
+<ul class="flex flex-col justify-center align-center w-full gap-4 pb-8">
     {#if $currentNav === "projects"}
         {#each PROJECTS as project}
             <ProjectCard {project} />
