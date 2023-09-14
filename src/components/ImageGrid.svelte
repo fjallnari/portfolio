@@ -3,7 +3,7 @@
 
     export let project: ProjectInterface;
 
-    let images = project.images;
+    let images = project.images ?? [];
     let scrollY = 0;
 
     const swapImages = (idxA: number, idxB: number) => {
@@ -48,11 +48,11 @@
             alt=""
         >
     </div>
-    <div class="grid grid-cols-{images.length - 1} gap-4">
+    <div class="grid gap-4" style="grid-template-columns: repeat({images.length - 1}, minmax(0, 1fr));">
         {#each images.slice(1) as image, idx}
-            <button class="w-fit shadow" on:click={() => swapImages(0, idx + 1)}>
-                <img 
-                    class="h-auto max-h-56 max-w-full rounded-sm"
+            <button class="shadow" on:click={() => swapImages(0, idx + 1)}>
+                <img
+                    class="h-auto max-w-full rounded-sm"
                     src="/images/{project.id}/{image}.png"
                     alt=""
                 >

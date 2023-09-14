@@ -9,7 +9,7 @@
 
 </script>
 
-<a href="/projects/{project.id}" class="grid grid-cols-5 grid-rows-3 gap-2 p-2 cursor-pointer rounded active:bg-oxford-800 transition-colors">
+<a href="/projects/{project.id}" class="grid grid-cols-5 grid-rows-3 gap-2 p-2 cursor-pointer rounded-sm active:bg-oxford-700 hover:bg-oxford-800 shadow transition-colors">
     <div class="row-span-4 col-span-1 flex flex-row justify-around items-center">
         <div class="flex flex-col justify-center items-center text-xl text-timberwolf">
             <p>{project.to ?? '-'}</p>

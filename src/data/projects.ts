@@ -1,4 +1,6 @@
-const PROJECTS = [
+import type ProjectInterface from "../interfaces/ProjectInterface";
+
+const PROJECTS: ProjectInterface[] = [
     {
         id: 'ttrpg-compass',
         title: 'TTRPG Compass',
@@ -30,7 +32,8 @@ const PROJECTS = [
         to: '2023',
         repo: 'https://github.com/fjallnari/morii-vtt',
         website: 'https://moriivtt.com/',
-        tags: ['svelte', 'node', 'mongodb']
+        tags: ['svelte', 'node', 'mongodb'],
+        images: []
     },
     {
         id: 'gw2-cartographer',
@@ -41,7 +44,8 @@ const PROJECTS = [
         to: '2023',
         repo: 'https://github.com/fjallnari/gw2-cartographer',
         website: 'https://gw2-cartographer.fjallnari.com/',
-        tags: ['svelte', 'tailwind', 'canvas']
+        tags: ['svelte', 'tailwind', 'canvas'],
+        images: []
     },
     {
         id: 'spotter-bot',
@@ -52,7 +56,8 @@ const PROJECTS = [
         to: '2022',
         repo: 'https://github.com/nevermore-org/spotter-bot',
         website: '',
-        tags: ['node', 'discord', 'mongodb']
+        tags: ['node', 'discord', 'mongodb'],
+        images: []
     }
 ];
 

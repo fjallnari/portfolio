@@ -14,15 +14,16 @@ const project = PROJECTS.find((project) => project.id === projectID);
 <Layout title="fjallnari">
 	<main class="lg:w-2/5 p-4 max-w-[100% - 2rem] m-auto lg:mt-24 h-full">
         <a href="/" class="text-timberwolf hover:text-timberwolf active:text-oxford-300">← Back</a>
-		<div class="flex flex-col gap-4 mt-4">
+		<div class="flex flex-col gap-2 mt-4">
             <h1 class="text-alabaster text-2xl">{project?.title}</h1>
+			<h2 class="text-gray-400">{project?.from} - {project?.to}</h2>
 			<ProjectLinks repo={project?.repo} website={project?.website} client:load />
-			<div class="flex flex-row gap-4">
+			<div class="flex flex-row gap-4 mb-4">
 				<ProjectTags tags={project?.tags} client:load />
 			</div>
 			<ImageGrid {project} client:load />
-			<h2 class="text-alabaster text-xl">About</h2>
-			<p class="font-ovo pb-8">
+			<h2 class="text-alabaster text-xl mt-4">About</h2>
+			<p class="font-literata font-thin pb-8">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu diam nisl. Mauris tempus vulputate leo, ut vestibulum dolor egestas eu. Nullam in dolor in arcu iaculis commodo ac ac odio. Duis sodales nisi semper ligula sodales, eget aliquet nulla vestibulum. Aenean id orci varius, aliquet purus vitae, condimentum est. Vivamus vestibulum arcu rhoncus, tincidunt nunc a, eleifend quam. Vestibulum at lacus congue enim rhoncus dapibus. Aliquam blandit luctus ligula, vitae malesuada ante egestas at. Proin feugiat venenatis purus, vel consequat nisl bibendum a. Sed hendrerit hendrerit nibh, quis congue ligula consequat nec. 
 			</p>
 		</div>
