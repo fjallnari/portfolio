@@ -43,6 +43,41 @@ const TAGS: Record<string, { title: string; color: string; icon: string }> = {
         title: 'Discord',
         color: '#7289da',
         icon: 'logos:discord-icon'
+    },
+    typescript: {
+        title: 'Typescript',
+        color: '#007acc',
+        icon: 'vscode-icons:file-type-typescript'
+    },
+    python: {
+        title: 'Python',
+        color: '#3776ab',
+        icon: 'vscode-icons:file-type-python'
+    },
+    rust: {
+        title: 'Rust',
+        color: '#000000',
+        icon: 'vscode-icons:file-type-rust'
+    },
+    docker: {
+        title: 'Docker',
+        color: '#2496ed',
+        icon: 'vscode-icons:file-type-docker'
+    },
+    linux: {
+        title: 'Linux',
+        color: '#000000',
+        icon: 'flat-color-icons:linux'
+    },
+    git: {
+        title: 'Git',
+        color: '#f34f29',
+        icon: 'vscode-icons:file-type-git'
+    },
+    astro: {
+        title: 'Astro',
+        color: '#000000',
+        icon: 'vscode-icons:file-type-astro'
     }
 };
 

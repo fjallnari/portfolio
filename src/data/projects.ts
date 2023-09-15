@@ -9,7 +9,7 @@ const PROJECTS: ProjectInterface[] = [
         from: '2023',
         repo: 'https://github.com/fjallnari/ttrpg-compass',
         website: 'https://compass.fjallnari.com/',
-        tags: ['svelte', 'tailwind', 'go', 'redis'],
+        tags: ['svelte', 'tailwind', 'go', 'redis', 'python'],
         images: ['similarity', 'filters', 'simple']
     },
     {
