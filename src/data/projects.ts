@@ -5,7 +5,7 @@ const PROJECTS: ProjectInterface[] = [
         id: 'ttrpg-compass',
         title: 'TTRPG Compass',
         description: 'Tool to easily browse and compare ttrpg systems with stellar charts and filters',
-        body: '',
+        body: `*Lorem ipsum dolor sit amet*, consectetur adipiscing elit. **In eu diam nisl.** ## Mauris tempus vulputate leo, ut vestibulum dolor egestas eu. Nullam in dolor in arcu iaculis commodo ac ac odio. Duis sodales nisi semper ligula sodales, eget aliquet nulla vestibulum. Aenean id orci varius, aliquet purus vitae, condimentum est. Vivamus vestibulum arcu rhoncus, tincidunt nunc a, eleifend quam. Vestibulum at lacus congue enim rhoncus dapibus. Aliquam blandit luctus ligula, vitae malesuada ante egestas at. Proin feugiat venenatis purus, vel consequat nisl bibendum a. Sed hendrerit hendrerit nibh, quis congue ligula consequat nec.`,
         from: '2023',
         repo: 'https://github.com/fjallnari/ttrpg-compass',
         website: 'https://compass.fjallnari.com/',
@@ -33,7 +33,7 @@ const PROJECTS: ProjectInterface[] = [
         repo: 'https://github.com/fjallnari/morii-vtt',
         website: 'https://moriivtt.com/',
         tags: ['svelte', 'node', 'mongodb'],
-        images: []
+        images: ['morii-5e-sheet', 'morii-gm-view', 'cairn-sheet', 'cairn-gm-view',  'morii-quick-create', 'shadowdark-sheet']
     },
     {
         id: 'gw2-cartographer',
@@ -45,7 +45,7 @@ const PROJECTS: ProjectInterface[] = [
         repo: 'https://github.com/fjallnari/gw2-cartographer',
         website: 'https://gw2-cartographer.fjallnari.com/',
         tags: ['svelte', 'tailwind', 'canvas'],
-        images: []
+        images: ['imap-tangled-depths', 'fmap-auric-basin', 'bmap-vabbi']
     },
     {
         id: 'spotter-bot',

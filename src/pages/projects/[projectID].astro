@@ -4,7 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import ProjectTags from '../../components/ProjectTags.svelte';
 import ProjectLinks from '../../components/ProjectLinks.svelte';
 import ImageGrid from '../../components/ImageGrid.svelte';
-
+import MarkdownRenderer from '../../components/MarkdownRenderer.svelte';
 
 const { projectID } = Astro.params;
 
@@ -18,14 +18,14 @@ const project = PROJECTS.find((project) => project.id === projectID);
             <h1 class="text-alabaster text-2xl">{project?.title}</h1>
 			<h2 class="text-gray-400">{project?.from} - {project?.to}</h2>
 			<ProjectLinks repo={project?.repo} website={project?.website} client:load />
-			<div class="flex flex-row gap-4 mb-4">
-				<ProjectTags tags={project?.tags} client:load />
+			<div class="flex flex-row gap-2 mb-4">
+				<ProjectTags tags={project?.tags} wantBg client:load />
 			</div>
 			<ImageGrid {project} client:load />
-			<h2 class="text-alabaster text-xl mt-4">about</h2>
-			<p class="font-literata font-thin pb-8">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu diam nisl. Mauris tempus vulputate leo, ut vestibulum dolor egestas eu. Nullam in dolor in arcu iaculis commodo ac ac odio. Duis sodales nisi semper ligula sodales, eget aliquet nulla vestibulum. Aenean id orci varius, aliquet purus vitae, condimentum est. Vivamus vestibulum arcu rhoncus, tincidunt nunc a, eleifend quam. Vestibulum at lacus congue enim rhoncus dapibus. Aliquam blandit luctus ligula, vitae malesuada ante egestas at. Proin feugiat venenatis purus, vel consequat nisl bibendum a. Sed hendrerit hendrerit nibh, quis congue ligula consequat nec. 
-			</p>
+			<h2 class="text-alabaster text-xl">about</h2>
+			<div class="font-literata font-thin pb-8">
+				<MarkdownRenderer source={project?.body} client:load />
+			</div>
 		</div>
 	</main>
 </Layout>

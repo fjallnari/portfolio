@@ -1,9 +1,9 @@
     <script lang="ts">
     import Icon from "@iconify/svelte";
-        import { currentNav } from "../../stores";
+    import { currentNav } from "../../stores";
     import KEY_SKILLS from "../data/key_skills";
-        import PROJECTS from "../data/projects";
-        import ProjectCard from "./ProjectCard.svelte";
+    import PROJECTS from "../data/projects";
+    import ProjectCard from "./ProjectCard.svelte";
     import ProjectTags from "./ProjectTags.svelte";
 
     </script>
