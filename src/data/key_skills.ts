@@ -8,6 +8,7 @@ const KEY_SKILLS: string[] = [
     'python',
     'mongodb',
     'redis',
+    'socketio',
     'git',
     'docker',
     'linux',

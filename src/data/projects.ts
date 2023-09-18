@@ -32,7 +32,7 @@ const PROJECTS: ProjectInterface[] = [
         to: '2023',
         repo: 'https://github.com/fjallnari/morii-vtt',
         website: 'https://moriivtt.com/',
-        tags: ['svelte', 'node', 'mongodb'],
+        tags: ['svelte', 'node', 'mongodb', 'socketio'],
         images: ['morii-5e-sheet', 'morii-gm-view', 'cairn-sheet', 'cairn-gm-view',  'morii-quick-create', 'shadowdark-sheet']
     },
     {

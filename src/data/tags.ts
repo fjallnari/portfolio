@@ -78,7 +78,12 @@ const TAGS: Record<string, { title: string; color: string; icon: string }> = {
         title: 'Astro',
         color: '#000000',
         icon: 'vscode-icons:file-type-astro'
-    }
+    },
+    socketio: {
+        title: 'Socket.io',
+        color: '#000000',
+        icon: 'logos:socket-io'
+    },
 };
 
 export default TAGS;
