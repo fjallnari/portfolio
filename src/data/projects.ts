@@ -5,7 +5,7 @@ const PROJECTS: ProjectInterface[] = [
         id: 'ttrpg-compass',
         title: 'TTRPG Compass',
         description: 'Tool to easily browse and compare ttrpg systems with stellar charts and filters',
-        body: `*Lorem ipsum dolor sit amet*, consectetur adipiscing elit. **In eu diam nisl.** ## Mauris tempus vulputate leo, ut vestibulum dolor egestas eu. Nullam in dolor in arcu iaculis commodo ac ac odio. Duis sodales nisi semper ligula sodales, eget aliquet nulla vestibulum. Aenean id orci varius, aliquet purus vitae, condimentum est. Vivamus vestibulum arcu rhoncus, tincidunt nunc a, eleifend quam. Vestibulum at lacus congue enim rhoncus dapibus. Aliquam blandit luctus ligula, vitae malesuada ante egestas at. Proin feugiat venenatis purus, vel consequat nisl bibendum a. Sed hendrerit hendrerit nibh, quis congue ligula consequat nec.`,
+        body: `*Lorem ipsum dolor sit amet*, consectetur adipiscing elit. **In eu diam nisl.**  \n # why? \n vulputate leo, ut vestibulum dolor egestas eu. Nullam in dolor in arcu iaculis commodo ac ac odio. Duis sodales nisi semper ligula sodales, eget aliquet nulla vestibulum. Aenean id orci varius, aliquet purus vitae, condimentum est. Vivamus vestibulum arcu rhoncus, tincidunt nunc a, eleifend quam. Vestibulum at lacus congue enim rhoncus dapibus. Aliquam blandit luctus ligula, vitae malesuada ante egestas at. Proin feugiat venenatis purus, vel consequat nisl bibendum a. Sed hendrerit hendrerit nibh, quis congue ligula consequat nec.`,
         from: '2023',
         repo: 'https://github.com/fjallnari/ttrpg-compass',
         website: 'https://compass.fjallnari.com/',

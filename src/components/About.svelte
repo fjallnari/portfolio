@@ -6,7 +6,7 @@
 
 <div class="flex flex-col gap-4 lg:ml-8">
     <h2 class="text-xl">about</h2>
-    <div class="flex flex-row flex-wrap items-center gap-2 font-literata font-thin">
+    <div class="flex flex-row flex-wrap items-center gap-2 font-literata font-light">
         <div class="flex flex-row gap-2 items-center">
             <p>A web developer living in Czechia.</p>
             <Icon icon='twemoji:flag-czechia' />

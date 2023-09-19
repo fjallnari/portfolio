@@ -23,7 +23,7 @@ const project = PROJECTS.find((project) => project.id === projectID);
 			</div>
 			<ImageGrid {project} client:load />
 			<h2 class="text-alabaster text-xl">about</h2>
-			<div class="font-literata font-thin pb-8">
+			<div class="font-literata font-light pb-8">
 				<MarkdownRenderer source={project?.body} client:load />
 			</div>
 		</div>
