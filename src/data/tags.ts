@@ -84,6 +84,11 @@ const TAGS: Record<string, { title: string; color: string; icon: string }> = {
         color: '#000000',
         icon: 'logos:socket-io'
     },
+    capacitor: {
+        title: 'Capacitor',
+        color: '#000000',
+        icon: 'devicon:capacitor'
+    },
 };
 
 export default TAGS;

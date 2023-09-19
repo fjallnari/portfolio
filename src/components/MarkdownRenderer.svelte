@@ -27,4 +27,11 @@
         font-family: Montserrat Variable;
         /* color: #66999B; */
     }
+    :global(.md-container p) {
+        margin: 0.75em 0 0.75em 0;
+    }
+
+    :global(.md-container a) {
+        color: #66999B;
+    }
 </style>

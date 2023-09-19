@@ -17,7 +17,7 @@ const project = PROJECTS.find((project) => project.id === projectID);
 		<div class="flex flex-col gap-2 mt-4">
             <h1 class="text-alabaster text-2xl">{project?.title}</h1>
 			<h2 class="text-gray-400">{project?.from} - {project?.to}</h2>
-			<ProjectLinks repo={project?.repo} website={project?.website} client:load />
+			<ProjectLinks {project} client:load />
 			<div class="flex flex-row gap-2 mb-4">
 				<ProjectTags tags={project?.tags} wantBg client:load />
 			</div>

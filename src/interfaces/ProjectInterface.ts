@@ -7,6 +7,7 @@ export default interface ProjectInterface {
     to?: string;
     repo?: string;
     website?: string;
+    android?: string;
     tags: string[];
     images: string[];
 }
