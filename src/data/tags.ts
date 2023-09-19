@@ -37,7 +37,7 @@ const TAGS: Record<string, { title: string; color: string; icon: string }> = {
     canvas: {
         title: 'Canvas',
         color: '#f5a623',
-        icon: 'mdi:canvas'
+        icon: 'mdi:artboard'
     },
     discord: {
         title: 'Discord',
