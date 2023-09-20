@@ -2,7 +2,7 @@ export default interface ProjectInterface {
     id: string;
     title: string;
     description: string;
-    body: string;
+    writeup: string;
     from?: string;
     to?: string;
     repo?: string;
