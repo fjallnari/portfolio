@@ -1,0 +1,10 @@
+---
+import NavButton from "./NavButton.svelte";
+
+---
+
+<div class="flex flex-row lg:ml-8 items-center flex-wrap gap-4 p-2 rounded-sm shadow bg-oxford-800">
+    <NavButton title="about" client:load />|
+    <NavButton title="projects" client:load />|
+    <NavButton title="blog" client:load />
+</div>

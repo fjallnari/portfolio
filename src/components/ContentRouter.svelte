@@ -1,11 +1,9 @@
     <script lang="ts">
-    import Icon from "@iconify/svelte";
     import { currentNav } from "../../stores";
-    import KEY_SKILLS from "../data/key_skills";
     import PROJECTS from "../data/projects";
     import ProjectCard from "./ProjectCard.svelte";
-    import ProjectTags from "./ProjectTags.svelte";
     import About from "./About.svelte";
+    import { quotes } from "../data/quotes";
 
     </script>
 
@@ -15,7 +13,7 @@
                 <ProjectCard {project} />
             {/each}
         {:else if $currentNav === "blog"}
-            <p class="lg:ml-8">moonlight drowns out all but the brightest stars</p>
+            <p class="lg:ml-8">{quotes[0]}</p>
         {:else if $currentNav === "about"}
             <About />
         {/if}
