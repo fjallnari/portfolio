@@ -1,14 +1,13 @@
 <script lang="ts">
-    import { currentNav } from '../../stores';
 
     export let title: string;
+    export let url = '/' + title.toLowerCase();
+    export let path: string;
+
 </script>
 
-<button
-    class="{$currentNav === title
-        ? 'text-oxford-300 border-b-white'
-        : ''} transition-colors"
-    on:click={() => currentNav.set(title)}
+<a href={url} class=" active:text-oxford-300 
+    transition-colors {path === url ? 'text-oxford-300 font-medium' : ''}"
 >
     {title}
-</button>
+</a>
