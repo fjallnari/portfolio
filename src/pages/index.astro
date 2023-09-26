@@ -1,8 +1,5 @@
 ---
 import ContentLayout from '../layouts/ContentLayout.astro';
-import Header from '../components/Header.astro';
-import ContentRouter from '../components/ContentRouter.svelte';
-import Navbar from '../components/Navbar.astro';
 import About from '../components/About.svelte';
 
 ---
@@ -10,13 +7,3 @@ import About from '../components/About.svelte';
 <ContentLayout>
 	<About client:load />
 </ContentLayout>
-
-<!-- <Layout title="fjallnari">
-	<main class="lg:w-2/5 p-4 max-w-[100% - 2rem] m-auto lg:mt-24 h-full">
-		<div class="flex flex-col gap-8">
-			<Header />
-			<Navbar />
-			<ContentRouter client:load />
-		</div>
-	</main>
-</Layout> -->
