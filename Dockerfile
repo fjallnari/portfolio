@@ -8,8 +8,8 @@ COPY . .
 RUN bun --bun run build
 
 ENV HOST=0.0.0.0
-ENV PORT=3000
-EXPOSE 3000
+ENV PORT=5000
+# EXPOSE 3000
 ENTRYPOINT ["bun", "--bun", "./dist/server/entry.mjs"]
 
 # FROM node:lts AS runtime
