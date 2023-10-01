@@ -1,6 +1,5 @@
 <script lang="ts">
     import type ProjectInterface from "../interfaces/ProjectInterface";
-    import TimelineDelim from "./TimelineDelim.svelte";
     import ProjectTags from "./ProjectTags.svelte";
 
     export let project: ProjectInterface;
