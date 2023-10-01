@@ -4,7 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import ProjectTags from '../../components/ProjectTags.svelte';
 import ProjectLinks from '../../components/ProjectLinks.svelte';
 import ImageGrid from '../../components/ImageGrid.svelte';
-import MarkdownRenderer from '../../components/MarkdownRenderer.svelte';
+import ProjectWriteup from '../../components/ProjectWriteup.svelte';
 
 const { projectID } = Astro.params;
 
@@ -22,10 +22,7 @@ const project = PROJECTS.find((project) => project.id === projectID);
 				<ProjectTags tags={project?.tags} wantBg client:load />
 			</div>
 			<ImageGrid {project} client:load />
-			<h2 class="text-alabaster text-xl">about</h2>
-			<div class="font-literata font-light pb-8">
-				<MarkdownRenderer source={project?.writeup} client:load />
-			</div>
+			<ProjectWriteup {project} client:load />
 		</div>
 	</main>
 </Layout>

@@ -25,5 +25,16 @@
     <div class="flex flex-row flex-wrap gap-4">
         <ProjectTags tags={KEY_SKILLS} wantBg/>
     </div>
-    <!-- <h2 class="text-xl">contact me</h2> -->
+    <h2 class="text-xl">reach me</h2>
+    <div class="flex flex-row flex-wrap gap-4 text-3xl mb-2">
+        <a href="https://github.com/fjallnari" class="flex flex-row items-center gap-2">
+            <Icon icon="mdi:github" />
+        </a>
+        <a href="mailto:fjallnari@gmail.com" class="flex flex-row items-center gap-2">
+            <Icon icon="mdi:email" />
+        </a>
+        <!-- <a href="example.com" class="flex flex-row items-center gap-2">
+            <Icon icon="mdi:linkedin" />
+        </a> -->
+    </div> 
 </div>
