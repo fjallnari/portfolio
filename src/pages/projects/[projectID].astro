@@ -18,7 +18,7 @@ const project = PROJECTS.find((project) => project.id === projectID);
             <h1 class="text-alabaster text-2xl">{project?.title}</h1>
 			<h2 class="text-gray-400">{project?.from} - {project?.to}</h2>
 			<ProjectLinks {project} client:load />
-			<div class="flex flex-row gap-2 mb-4">
+			<div class="flex flex-row flex-wrap gap-2 mb-4">
 				<ProjectTags tags={project?.tags} wantBg client:load />
 			</div>
 			<ImageGrid {project} client:load />

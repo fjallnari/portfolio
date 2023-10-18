@@ -33,7 +33,6 @@ module.exports = {
             fontFamily: {
                 montserrat: ['Montserrat Variable', 'sans-serif'],
                 literata: ['Literata Variable', 'serif'],
-                ovo: ['Ovo', 'serif'],
             },
             transformOrigin: {
                 'center-center': 'center center'
