@@ -4,11 +4,7 @@
 
     export let project: ProjectInterface;
 
-    // let screenSize: number = 0;
-
 </script>
-
-<!-- <svelte:window bind:innerWidth={screenSize} /> -->
 
 <a href="/projects/{project.id}" class="grid grid-cols-6 grid-rows-3 gap-2 p-2 cursor-pointer rounded-sm active:bg-oxford-750 hover:bg-oxford-850 hover:shadow transition-colors">
     <div class="row-span-4 col-span-1 flex flex-row justify-around items-center">
@@ -22,9 +18,6 @@
                 
             {/if}
         </div>
-        <!-- {#if screenSize > 500}
-            <TimelineDelim />
-        {/if} -->
     </div>
     <div class="col-span-5 text-xl">
         {project.title}

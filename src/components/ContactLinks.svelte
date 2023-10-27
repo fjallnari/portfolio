@@ -23,7 +23,4 @@
             </a>
         </div>
     {/each}
-    <!-- <a href="example.com" class="flex flex-row items-center gap-2">
-        <Icon icon="mdi:linkedin" />
-    </a> -->
 </div>
