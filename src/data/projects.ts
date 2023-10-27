@@ -51,19 +51,19 @@ const PROJECTS: ProjectInterface[] = [
         tags: ['svelte', 'tailwind', 'canvas'],
         images: ['imap-tangled-depths', 'fmap-auric-basin', 'bmap-vabbi']
     },
-    {
-        id: 'spotter-bot',
-        title: 'Spotter Bot',
-        description: 'A Guild Wars 2 Discord bot, uses official API to provide detailed info about dailies, fractals, PSNA and more.',
-        writeup: `Spotter Bot is Guild Wars 2 Discord bot, started with a friend when we needed a bot to send daily fractals regularly. Uses official API to provide detailed information about daily in-game things as as dailies, fractal instabilities, PSNA, and more. I've also implemented user authentication via API keys with various levels of access and set up command scaffolding using Hygen templates to quickly generate boilerplate for new commands.
-    \nIt uses the Discord.js library for the actual bot parts and is built on Node.js with MongoDB as the primary DB, which is automatically refreshed each day from the API. Dailies are sent periodically through Discord webhooks.`,
-        from: '2021',
-        to: '2022',
-        repo: 'https://github.com/nevermore-org/spotter-bot',
-        website: '',
-        tags: ['node', 'discord', 'mongodb'],
-        images: []
-    }
+    // {
+    //     id: 'spotter-bot',
+    //     title: 'Spotter Bot',
+    //     description: 'A Guild Wars 2 Discord bot, uses official API to provide detailed info about dailies, fractals, PSNA and more.',
+    //     writeup: `Spotter Bot is Guild Wars 2 Discord bot, started with a friend when we needed a bot to send daily fractals regularly. Uses official API to provide detailed information about daily in-game things as as dailies, fractal instabilities, PSNA, and more. I've also implemented user authentication via API keys with various levels of access and set up command scaffolding using Hygen templates to quickly generate boilerplate for new commands.
+    // \nIt uses the Discord.js library for the actual bot parts and is built on Node.js with MongoDB as the primary DB, which is automatically refreshed each day from the API. Dailies are sent periodically through Discord webhooks.`,
+    //     from: '2021',
+    //     to: '2022',
+    //     repo: 'https://github.com/nevermore-org/spotter-bot',
+    //     website: '',
+    //     tags: ['node', 'discord', 'mongodb'],
+    //     images: []
+    // }
 ];
 
 export default PROJECTS;

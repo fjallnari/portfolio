@@ -2,6 +2,7 @@
     import Icon from "@iconify/svelte";
     import KEY_SKILLS from "../data/key_skills";
     import ProjectTags from "./ProjectTags.svelte";
+    import ContactLinks from "./ContactLinks.svelte";
 </script>
 
 <div class="flex flex-col gap-4 lg:ml-8">
@@ -22,19 +23,9 @@
         </p>
     </div>
     <h2 class="text-xl">key skills</h2>
-    <div class="flex flex-row flex-wrap gap-4">
+    <div class="flex flex-row flex-wrap gap-2">
         <ProjectTags tags={KEY_SKILLS} wantBg/>
     </div>
     <h2 class="text-xl">reach me</h2>
-    <div class="flex flex-row flex-wrap gap-4 text-3xl mb-2">
-        <a href="https://github.com/fjallnari" class="flex flex-row items-center gap-2">
-            <Icon icon="mdi:github" />
-        </a>
-        <a href="mailto:fjallnari@gmail.com" class="flex flex-row items-center gap-2">
-            <Icon icon="mdi:email" />
-        </a>
-        <!-- <a href="example.com" class="flex flex-row items-center gap-2">
-            <Icon icon="mdi:linkedin" />
-        </a> -->
-    </div> 
+    <ContactLinks />
 </div>
