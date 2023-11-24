@@ -8,8 +8,8 @@
 </script>
 
 {#each tags as tag}
-    <div class="flex flex-row justify-center items-center gap-1 rounded-sm {wantBg ? 'shadow bg-oxford-800 py-1 px-2' : ''}">
-        <Icon class="w-4 h-4" icon={TAGS[tag].icon} />
-        <div class="text-sm">{TAGS[tag].title}</div>
+    <div class="flex flex-row justify-center items-center gap-2 rounded {wantBg ? 'shadow-md bg-oxford-750 py-2 px-4' : ''}">
+        <Icon class="w-8 h-8" icon={TAGS[tag].icon} />
+        <div class="text-lg font-literata">{TAGS[tag].title}</div>
     </div>
 {/each}

@@ -1,16 +1,18 @@
 <script lang="ts">
     import Icon from "@iconify/svelte";
     import BentoBox from "./BentoBox.svelte";
+    import KEY_SKILLS from "../../data/key_skills";
+    import TAGS from "../../data/tags";
+    import ProjectTags from "../ProjectTags.svelte";
 
 
 </script>
 
 <div class="w-full h-full flex flex-row flex-wrap gap-6 pb-8">
-    <BentoBox title="what i do">
-        <div class="pl-2">
-            <p class="text-xl">i love creating stories & experiences</p>
-            <p class="text-xl">i make web apps</p>
-            <p class="text-xl">i make mobile apps</p>
+    <BentoBox title="what i do" flexBasis="20%">
+        <div class="pl-2 text-xl font-literata">
+            <p>websites & web apps</p>
+            <p>branding & logo design</p>
         </div>
     </BentoBox>
     <BentoBox title="education">
@@ -24,20 +26,24 @@
             Studio of Graphic Design and Multimedia (AGD+M)
         </p>
     </BentoBox>
-    <BentoBox title="tools i use">
-        <p class="text-xl">affinity stuff</p>
+    <BentoBox title="tools i use" flexBasis="33%">
+        <div class="flex flex-row justify-center items-center flex-wrap gap-4 gap-y-4">
+            <ProjectTags tags={["aff_designer", "figma", "vscode", "aff_photo", "aff_publisher"]} wantBg={true} />
+        </div>
     </BentoBox>
-    <BentoBox title="key skills">
-        <p class="text-xl">svelte & stuff</p>
+    <BentoBox title="key skills" flexBasis="40%">
+        <div class="flex flex-row justify-center items-center flex-wrap gap-4 gap-y-4">
+            <ProjectTags tags={KEY_SKILLS} wantBg={true} />
+        </div>
     </BentoBox>
     <BentoBox title="about me">
-        <div class="flex flex-col gap-4 text-xl text-justify font-literata pl-2">
+        <div class="flex flex-col gap-3 text-xl text-justify font-literata pl-2">
             <p>I currently live in Czechia. 🇨🇿</p>
             <p>
-                I have a great love of learning, and am always interested in bleeding-edge technologies and new ways of solving problems. ❤️ 
+                I have a great love of learning, and am always interested in new ways of solving problems. ❤️ 
             </p>
             <p>
-                I enjoy singing and playing music, tabletop RPGs, books, and will never say no to a good brew of tea, especially if it's a nice Taiwanese oolong. 🍵
+                I enjoy singing and playing music, tabletop RPGs, books, and will never say no to a good brew of tea. 🍵
             </p>
         </div>
     </BentoBox>

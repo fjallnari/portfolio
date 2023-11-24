@@ -2,13 +2,17 @@
 import NewLayout from "../layouts/NewLayout.astro";
 import ProjectsBentoGrid from '../components/new/ProjectsBentoGrid.svelte';
 import AboutMeBento from '../components/new/AboutMeBento.svelte';
+
+const hostName = Astro.url.hostname;
 ---
 
 <NewLayout>
-    <div class="flex flex-row justify-between flex-wrap w-full font-eiko gap-8">
+    <div class="flex flex-row justify-between flex-wrap w-full font-eiko gap-4">
         <div class="flex flex-col font-eiko lg:text-9xl text-6xl gap-4">
             <h1 class="">hi, I'm</h1>
-            <h1 class="text-oxford-300">fjallnari</h1>
+            <h1 class="text-oxford-300">
+                {hostName === '???' ? 'jan' : 'fjallnari'}
+            </h1>
         </div>
         <div class="flex flex-col center text-4xl lg:text-right">
             <div class=" leading-snug">
@@ -22,6 +26,6 @@ import AboutMeBento from '../components/new/AboutMeBento.svelte';
             </div>
         </div>
     </div>
-    <ProjectsBentoGrid />
-    <AboutMeBento />
+    <ProjectsBentoGrid client:load />
+    <AboutMeBento client:load />
 </ContentLayout>
