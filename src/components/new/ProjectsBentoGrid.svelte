@@ -7,14 +7,14 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     <div class="grid gap-6">
         <NewProjectCard 
-            name="morii"
+            name="morii-vtt"
             type="web app"
             colorBg="#3D2824" 
             colorText="#E2E2E2"
             imageSrc="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" 
         />
         <NewProjectCard 
-            name="ttrpg compass"
+            name="ttrpg-compass"
             type="website"
             colorBg="#111A20"
             colorText="#B69048"
