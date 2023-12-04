@@ -11,8 +11,9 @@
             type="web app"
             colorBg="#3D2824" 
             colorText="#E2E2E2"
-            imageSrc="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" 
+            imageSrc="/images/morii-vtt-collage.png"
         />
+
         <NewProjectCard 
             name="ttrpg-compass"
             type="website"
@@ -22,20 +23,22 @@
         />
 
         <NewProjectCard 
-            name="cartographer"
-            type="web app"
-            colorBg="#24363D"
-            colorText="#B69048"
-            imageSrc="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" 
+            name="ape alliance"
+            type="business cards + socials + website"
+            colorBg="#231F20" 
+            colorText="#E9E9E9"
+            imageSrc="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" 
         />
+
     </div>
     <div class="grid gap-6">
+
         <NewProjectCard 
             name="terramem"
-            type="branding"
+            type="brand design"
             colorBg="#202419" 
             colorText="#B1B1A7"
-            imageSrc="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" 
+            imageSrc="/images/terramem-logo-full.png"
         />
         <NewProjectCard 
             name="shadowtorch"
@@ -45,11 +48,11 @@
             imageSrc="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" 
         />
         <NewProjectCard 
-            name="???"
-            type="poster design"
-            colorBg="#4F3C62" 
-            colorText="#E4E4E4"
-            imageSrc="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" 
+            name="cartographer"
+            type="web app"
+            colorBg="#24363D"
+            colorText="#B69048"
+            imageSrc="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" 
         />
     </div>
 </div>

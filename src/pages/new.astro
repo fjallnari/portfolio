@@ -2,6 +2,7 @@
 import NewLayout from "../layouts/NewLayout.astro";
 import ProjectsBentoGrid from '../components/new/ProjectsBentoGrid.svelte';
 import AboutMeBento from '../components/new/AboutMeBento.svelte';
+import TopIcons from '../components/new/TopIcons.svelte';
 
 const hostName = Astro.url.hostname;
 ---
@@ -14,14 +15,15 @@ const hostName = Astro.url.hostname;
                 {hostName === '???' ? 'jan' : 'fjallnari'}
             </h1>
         </div>
-        <div class="flex flex-col center text-4xl lg:text-right">
-            <div class=" leading-snug">
+        <div class="flex flex-col center text-4xl lg:text-right gap-4">
+            <div class="flex flex-col gap-4">
                 <h1 class="">graphic designer</h1>
                 <h1 class="">web developer</h1>
             </div>
-            <div class="mt-4 text-gray-400 leading-snug">
-                <h1 class="cursor-pointer hover:text-oxford-300">contact me</h1>
-                <h1 class="cursor-pointer hover:text-oxford-300">about me</h1>
+            <div class="flex flex-col text-gray-400 gap-4">
+                <h1 class="cursor-pointer hover:text-oxford-300 transition-colors">contact me</h1>
+                <h1 class="cursor-pointer hover:text-oxford-300 transition-colors">about me</h1>
+                <TopIcons client:load />
                 <!-- <h1 class="cursor-pointer">blog</h1> -->
             </div>
         </div>

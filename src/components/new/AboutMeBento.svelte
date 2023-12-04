@@ -28,7 +28,7 @@
     </BentoBox>
     <BentoBox title="tools i use" flexBasis="33%">
         <div class="flex flex-row justify-center items-center flex-wrap gap-4 gap-y-4">
-            <ProjectTags tags={["aff_designer", "figma", "vscode", "aff_photo", "aff_publisher"]} wantBg={true} />
+            <ProjectTags tags={["vscode","aff_designer", "aff_photo", "aff_publisher","figma"]} wantBg={true} />
         </div>
     </BentoBox>
     <BentoBox title="key skills" flexBasis="40%">
