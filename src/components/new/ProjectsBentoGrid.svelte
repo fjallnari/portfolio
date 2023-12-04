@@ -24,10 +24,10 @@
 
         <NewProjectCard 
             name="ape alliance"
-            type="business cards + socials + website"
+            type="business cards + website design"
             colorBg="#231F20" 
             colorText="#E9E9E9"
-            imageSrc="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" 
+            imageSrc="images/aa-card.jpg" 
         />
 
     </div>
