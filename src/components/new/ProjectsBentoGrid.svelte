@@ -17,9 +17,9 @@
         <NewProjectCard 
             name="ttrpg-compass"
             type="website"
-            colorBg="#111A20"
+            colorBg="#182326"
             colorText="#B69048"
-            imageSrc="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" 
+            imageSrc="/images/compass-collage.png" 
         />
 
         <NewProjectCard 
