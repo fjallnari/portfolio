@@ -45,7 +45,7 @@
             type="web & mobile app"
             colorBg="#114470"
             colorText="#7DD3FC"
-            imageSrc="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" 
+            imageSrc="/images/shadowtorch-collage.png" 
         />
         <NewProjectCard 
             name="cartographer"
