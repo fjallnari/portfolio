@@ -36,7 +36,7 @@
 
 <svelte:window bind:scrollY />
 
-{#if images.length != 0}
+{#if images && images.length != 0}
     <div class="grid gap-4 mb-4">
         <div class="h-full w-full overflow-hidden shadow">
             <img
@@ -44,7 +44,7 @@
                 on:mousemove={onZoom}
                 on:mouseleave={offZoom}
                 on:focus={() => {}}
-                class="h-full w-full rounded-sm origin-center-center object-cover"
+                class="h-full w-full rounded origin-center-center object-cover"
                 src="/images/{project.id}/{images[0]}.png"
                 alt=""
             >
@@ -53,7 +53,7 @@
             {#each images.slice(1) as image, idx}
                 <button class="shadow" on:click={() => swapImages(0, idx + 1)}>
                     <img
-                        class="h-auto max-w-full rounded-sm"
+                        class="h-auto max-w-full rounded"
                         src="/images/{project.id}/{image}.png"
                         alt={project.id}
                     >

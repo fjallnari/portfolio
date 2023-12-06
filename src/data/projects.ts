@@ -10,7 +10,8 @@ const PROJECTS: ProjectInterface[] = [
         repo: 'https://github.com/fjallnari/ttrpg-compass',
         website: 'https://compass.fjallnari.com/',
         tags: ['svelte', 'tailwind', 'go', 'redis', 'python'],
-        images: ['similarity', 'filters', 'simple']
+        images: ['similarity', 'filters', 'simple'],
+        type: 'dev'
     },
     {
         id: 'shadowtorch',
@@ -24,7 +25,8 @@ const PROJECTS: ProjectInterface[] = [
         website: 'https://shadowtorch.vercel.app/',
         android: 'https://github.com/fjallnari/shadowtorch/releases/tag/android-v.1.1.0',
         tags: ['svelte', 'tailwind', 'capacitor'],
-        images: ['ambient', 'settings', 'overview']
+        images: ['ambient', 'settings', 'overview'],
+        type: 'dev'
     },
     {
         id: 'morii-vtt',
@@ -36,7 +38,8 @@ const PROJECTS: ProjectInterface[] = [
         repo: 'https://github.com/fjallnari/morii-vtt',
         website: 'https://moriivtt.com/',
         tags: ['svelte', 'node', 'mongodb', 'socketio'],
-        images: ['morii-5e-sheet', 'morii-gm-view', 'cairn-sheet', 'cairn-gm-view',  'morii-quick-create', 'shadowdark-sheet']
+        images: ['morii-5e-sheet', 'morii-gm-view', 'cairn-sheet', 'cairn-gm-view',  'morii-quick-create', 'shadowdark-sheet'],
+        type: 'dev'
     },
     {
         id: 'gw2-cartographer',
@@ -49,7 +52,26 @@ const PROJECTS: ProjectInterface[] = [
         repo: 'https://github.com/fjallnari/gw2-cartographer',
         website: 'https://gw2-cartographer.fjallnari.com/',
         tags: ['svelte', 'tailwind', 'canvas'],
-        images: ['imap-tangled-depths', 'fmap-auric-basin', 'bmap-vabbi']
+        images: ['imap-tangled-depths', 'fmap-auric-basin', 'bmap-vabbi'],
+        type: 'dev'
+    },
+    {
+        id: 'terramem',
+        title: 'Terramem',
+        description: '',
+        writeup: ``,
+        tags: [],
+        images: [],
+        type: 'design'
+    },
+    {
+        id: 'ape-alliance',
+        title: 'Ape Alliance',
+        description: '',
+        writeup: ``,
+        tags: [],
+        images: [],
+        type: 'design'
     },
     // {
     //     id: 'spotter-bot',

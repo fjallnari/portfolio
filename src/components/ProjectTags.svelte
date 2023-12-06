@@ -2,7 +2,7 @@
     import Icon from "@iconify/svelte";
     import TAGS from "../data/tags";
 
-    export let tags: string[];
+    export let tags: string[] = [];
     export let darkerBg: boolean = true;
 
 </script>
