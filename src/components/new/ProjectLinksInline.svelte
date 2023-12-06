@@ -25,11 +25,11 @@
 </script>
 
 <div class="flex flex-row flex-wrap gap-4 text-alabaster">
-    {#each linkInfo as {link, icon, title}}
+    {#each linkInfo as { link, icon }}
         {#if link && link != ''}
-            <div class="flex justify-center items-centeractive:bg-oxford-750 cursor-pointer hover:text-oxford-300 transition-colors">
+            <a href={link} class="flex justify-center items-centeractive:bg-oxford-750 cursor-pointer hover:text-oxford-300 transition-colors">
                 <Icon icon={icon} class="text-4xl"/>
-            </div>
+            </a>
         {/if}
     {/each}
 </div>

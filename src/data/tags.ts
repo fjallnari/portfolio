@@ -87,7 +87,7 @@ const TAGS: Record<string, { title: string; color: string; icon: string }> = {
     capacitor: {
         title: 'Capacitor',
         color: '#000000',
-        icon: 'devicon:capacitor'
+        icon: 'vscode-icons:file-type-capacitor'
     },
     aff_photo: {
         title: 'Affinity Photo',

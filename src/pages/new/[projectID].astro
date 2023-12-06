@@ -4,6 +4,7 @@ import ProjectTags from '../../components/ProjectTags.svelte';
 import ProjectLinks from '../../components/ProjectLinks.svelte';
 import ProjectLinksInline from '../../components/new/ProjectLinksInline.svelte';
 import PROJECTS from '../../data/projects';
+import ImageGrid from '../../components/ImageGrid.svelte';
 
 const { projectID } = Astro.params;
 
@@ -22,7 +23,8 @@ const project = PROJECTS.find((project) => project.id === projectID);
         
         <!-- <ProjectLinks {project} client:load /> -->
         <div class="flex flex-row flex-wrap gap-2 mb-4">
-            <ProjectTags tags={project?.tags} wantBg client:load />
+            <ProjectTags tags={project?.tags} client:load />
         </div>
+        <ImageGrid {project} client:load />
     </div>
 </NewLayout>

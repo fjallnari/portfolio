@@ -24,7 +24,7 @@
     </div>
     <h2 class="text-xl">key skills</h2>
     <div class="flex flex-row flex-wrap gap-2">
-        <ProjectTags tags={KEY_SKILLS} wantBg/>
+        <ProjectTags tags={KEY_SKILLS} />
     </div>
     <h2 class="text-xl">reach me</h2>
     <ContactLinks />

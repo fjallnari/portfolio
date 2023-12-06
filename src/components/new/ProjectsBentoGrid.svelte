@@ -11,7 +11,7 @@
             type="web app"
             colorBg="#3D2824" 
             colorText="#E2E2E2"
-            imageSrc="/images/morii-vtt-collage.png"
+            imageSrc="/images/morii-vtt/_thumbnail.png"
         />
 
         <NewProjectCard 

@@ -26,6 +26,6 @@
         {project.description}
     </div>
     <div class="col-span-5 col-start-2 row-start-4 flex flex-row flex-wrap gap-4">
-        <ProjectTags tags={project.tags} wantBg />
+        <ProjectTags tags={project.tags} />
     </div>
 </a>
