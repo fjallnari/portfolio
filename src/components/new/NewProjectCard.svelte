@@ -17,7 +17,7 @@
     style="background-image: url({imageSrc});"
     on:mouseenter={() => hover = true}
     on:mouseleave={() => hover = false}
-    on:click={() => window.location.href = `/projects/${name}`}
+    on:click={() => window.location.href = `/new/${name}`}
 >
     <div class="absolute left-0 top-0 rounded w-full h-full hover:opacity-0 transition-opacity ease-in duration-200" style="background-color: {colorBg};"></div>
     {#if !hover}

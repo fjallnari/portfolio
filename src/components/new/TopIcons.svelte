@@ -4,7 +4,7 @@
 
 </script>
 
-<div class="mt-2 flex flex-row justify-end gap-4 items-center px-2 text-2xl">
+<div class="mt-2 flex flex-row justify-start lg:justify-end gap-4 items-center px-2 text-2xl">
     <button class="cursor-pointer hover:text-oxford-300 transition-colors">
         <Icon icon="akar-icons:github-fill" />
     </button>

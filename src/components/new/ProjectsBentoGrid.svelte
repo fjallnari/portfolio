@@ -23,7 +23,7 @@
         />
 
         <NewProjectCard 
-            name="ape alliance"
+            name="ape-alliance"
             type="business cards + website design"
             colorBg="#231F20" 
             colorText="#E9E9E9"
@@ -48,7 +48,7 @@
             imageSrc="/images/shadowtorch-collage.png" 
         />
         <NewProjectCard 
-            name="cartographer"
+            name="gw2-cartographer"
             type="web app"
             colorBg="#24363D"
             colorText="#B69048"

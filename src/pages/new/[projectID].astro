@@ -1,0 +1,28 @@
+---
+import NewLayout from '../../layouts/NewLayout.astro';
+import ProjectTags from '../../components/ProjectTags.svelte';
+import ProjectLinks from '../../components/ProjectLinks.svelte';
+import ProjectLinksInline from '../../components/new/ProjectLinksInline.svelte';
+import PROJECTS from '../../data/projects';
+
+const { projectID } = Astro.params;
+
+const project = PROJECTS.find((project) => project.id === projectID);
+
+---
+
+
+<NewLayout>
+    <div class="flex flex-col justify-start gap-8 font-eiko">
+        <a href="/new" class="w-fit h-fit text-gray-400 hover:text-oxford-300 active:text-oxford-300 transition-colors text-2xl">← back</a>
+        <div class="flex flex-row justify-between items-center flex-wrap w-full text-timberwolf gap-8">
+            <h1 class="text-6xl">{projectID}</h1>
+            <ProjectLinksInline {project} client:load />
+        </div>
+        
+        <!-- <ProjectLinks {project} client:load /> -->
+        <div class="flex flex-row flex-wrap gap-2 mb-4">
+            <ProjectTags tags={project?.tags} wantBg client:load />
+        </div>
+    </div>
+</NewLayout>

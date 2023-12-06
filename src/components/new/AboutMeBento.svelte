@@ -16,9 +16,8 @@
         </div>
     </BentoBox>
     <BentoBox title="education">
-        <p class="text-xl font-literata whitespace-nowrap pl-2 mb-2">
-            Masaryk University <br/>
-            Faculty of Informatics
+        <p class="text-xl font-literata pl-2 mb-2">
+            Masaryk University | Faculty of Informatics
         </p>
         <p class="text-xl font-literata pl-6 leading-normal">
             <span class="text-gray-400">2019-2021</span> Computer Science <br/>
@@ -27,12 +26,12 @@
         </p>
     </BentoBox>
     <BentoBox title="tools i use" flexBasis="33%">
-        <div class="flex flex-row justify-center items-center flex-wrap gap-4 gap-y-4">
+        <div class="flex flex-row justify-start items-center flex-wrap gap-4 gap-y-4 pl-2">
             <ProjectTags tags={["vscode","aff_designer", "aff_photo", "aff_publisher","figma"]} wantBg={true} />
         </div>
     </BentoBox>
     <BentoBox title="key skills" flexBasis="40%">
-        <div class="flex flex-row justify-center items-center flex-wrap gap-4 gap-y-4">
+        <div class="flex flex-row justify-start items-center flex-wrap gap-4 gap-y-4 pl-2">
             <ProjectTags tags={KEY_SKILLS} wantBg={true} />
         </div>
     </BentoBox>

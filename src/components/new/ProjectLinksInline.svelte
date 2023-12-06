@@ -1,6 +1,6 @@
 <script lang="ts">
     import Icon from "@iconify/svelte";
-    import type ProjectInterface from "../interfaces/ProjectInterface";
+    import type ProjectInterface from "../../interfaces/ProjectInterface";
 
     export let project: ProjectInterface | undefined;
 
@@ -24,12 +24,11 @@
 
 </script>
 
-<div class="flex flex-row flex-wrap gap-3 text-alabaster ">
+<div class="flex flex-row flex-wrap gap-4 text-alabaster">
     {#each linkInfo as {link, icon, title}}
         {#if link && link != ''}
-            <div class="flex flex-row gap-2 justify-center items-center shadow rounded bg-oxford-800 py-2 px-4 active:bg-oxford-750">
-                <Icon icon={icon} class="w-8 h-8" />
-                <a href={link} class="font-literata text-2xl">{title}</a>
+            <div class="flex justify-center items-centeractive:bg-oxford-750 cursor-pointer hover:text-oxford-300 transition-colors">
+                <Icon icon={icon} class="text-4xl"/>
             </div>
         {/if}
     {/each}
