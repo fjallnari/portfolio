@@ -36,7 +36,7 @@
         </div>
     </BentoBox>
     <BentoBox title="about me">
-        <div class="flex flex-col gap-3 text-xl text-justify font-literata pl-2">
+        <div class="flex flex-col gap-3 text-xl text-left font-literata pl-2">
             <p>I currently live in Czechia. 🇨🇿</p>
             <p>
                 I have a great love of learning, and am always interested in new ways of solving problems. ❤️ 

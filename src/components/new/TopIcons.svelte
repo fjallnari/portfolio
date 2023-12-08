@@ -5,9 +5,9 @@
 </script>
 
 <div class="mt-2 flex flex-row justify-start lg:justify-end gap-4 items-center px-2 text-2xl">
-    <button class="cursor-pointer hover:text-oxford-300 transition-colors">
+    <a href="https://github.com/fjallnari" class="flex flex-row items-center hover:text-oxford-300 transition-colors">
         <Icon icon="akar-icons:github-fill" />
-    </button>
+    </a>
     <button class="cursor-pointer hover:text-oxford-300 transition-colors">
         <Icon icon="akar-icons:instagram-fill" />
     </button>

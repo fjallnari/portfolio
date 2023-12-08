@@ -9,9 +9,8 @@
 {#if project?.writeup && project.writeup !== ""}
     <div>
         <h2 class="text-alabaster font-eiko text-4xl m-0">about</h2>
-        <div class="font-literata font-light pb-8 text-2xl text-justify">
+        <div class="font-literata font-light pb-8 text-xl text-justify">
             <MarkdownRenderer source={project.writeup} />
         </div>
     </div>
-
 {/if}

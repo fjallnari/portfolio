@@ -4,7 +4,7 @@ const PROJECTS: ProjectInterface[] = [
     {
         id: 'ttrpg-compass',
         title: 'TTRPG Compass',
-        description: 'Tool to easily browse and compare TTRPG systems with stellar charts and filters',
+        description: 'Website to easily browse and compare TTRPG systems with stellar charts and filters',
         writeup: ``,
         from: '2023',
         repo: 'https://github.com/fjallnari/ttrpg-compass',
@@ -44,9 +44,8 @@ const PROJECTS: ProjectInterface[] = [
     {
         id: 'gw2-cartographer',
         title: 'GW2 Cartographer',
-        description: 'Tool to generate high resolution Guild Wars 2 maps from the official API tiles.',
-        writeup: `This web application generates high-resolution Guild Wars 2 maps from official API tiles and map information. There are three modes of generation based on the amount of different information (base image, image + icons, image + icons + labels). It first checks whether or not the requested image is already cached and if not it assembles the image from tiles in Canvas, uploads it to Cloudinary through their API, and sends it back to the client.
-    \nWas created at first in pure Svelte, but I have since redesigned and simplified its interface with TailwindCSS. The map generation backend is written in Typescript using a simple Node.js server which also serves the client.`,
+        description: 'Tool to generate high resolution Guild Wars 2 maps from the official API tiles',
+        writeup: `This web app generates high-resolution Guild Wars 2 maps from official API tiles and map information. There are three modes of generation based on the amount of different information (base image, image + icons, image + icons + labels). It first checks whether or not the requested image is already cached and if not it assembles the image from tiles in Canvas, uploads it to Cloudinary through their API, and sends it back to the client. The map generation REST backend is written in Typescript using a simple Node.js server which also serves the client.`,
         from: '2022',
         to: '2023',
         repo: 'https://github.com/fjallnari/gw2-cartographer',
