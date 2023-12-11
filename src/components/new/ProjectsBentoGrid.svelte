@@ -27,7 +27,7 @@
             type="business cards + website design"
             colorBg="#231F20" 
             colorText="#E9E9E9"
-            imageSrc="images/aa-card.jpg" 
+            imageSrc="images/aa-card.png" 
         />
 
     </div>
@@ -38,7 +38,7 @@
             type="brand design"
             colorBg="#202419" 
             colorText="#B1B1A7"
-            imageSrc="/images/terramem-logo-full.png"
+            imageSrc="/images/terramem-guidelines.png"
         />
         <NewProjectCard 
             name="shadowtorch"
