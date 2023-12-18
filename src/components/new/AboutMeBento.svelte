@@ -21,7 +21,7 @@
         </p>
         <p class="text-xl font-literata pl-6 leading-normal">
             <span class="text-gray-400">2019-2021</span> Computer Science <br/>
-            <span class="text-gray-400">2021-now</span> Cybersecurity <br/>
+            <span class="text-gray-400">2022-now</span> Cybersecurity <br/>
             Studio of Graphic Design and Multimedia (AGD+M)
         </p>
     </BentoBox>

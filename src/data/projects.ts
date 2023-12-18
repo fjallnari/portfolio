@@ -57,10 +57,10 @@ const PROJECTS: ProjectInterface[] = [
     {
         id: 'terramem',
         title: 'Terramem',
-        description: '',
-        writeup: ``,
+        description: 'Brand design for a fictional far-future company that provides monthly subscription boxes with experiences from bygone eras.',
+        writeup: `This project was one of of the assignments of GDII, first we were to think up a fictional company (with focus on one of our childhood dream-professions) and give it a suitable name. From mixing the dream of wanting to be an explorer and the genre of cyberpunk came the idea of a company in a far-future in which all that remains of flowers and trees are fading memories, a company which would provide wealthy subscribers with monthly boxes of a fully-fledged virtual experience of times long gone.\n\nThe name *terramem* is a simple mash-up of *terra* + *mem*, latin words for the Earth and memory respectively - memory/remembrance of Earth.`,
         tags: [],
-        images: [],
+        images: ['guidelines', 'logo-concept', 'clear-space', 'colors', 'color-variants', 'secondary'],
         type: 'design'
     },
     {
@@ -69,7 +69,7 @@ const PROJECTS: ProjectInterface[] = [
         description: '',
         writeup: ``,
         tags: [],
-        images: [],
+        images: ['card-black.jpg', 'envelope.jpg'],
         type: 'design'
     },
     // {

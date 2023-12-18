@@ -45,7 +45,7 @@
                 on:mouseleave={offZoom}
                 on:focus={() => {}}
                 class="h-full w-full rounded origin-center-center object-cover"
-                src="/images/{project.id}/{images[0]}.png"
+                src="/images/{project.id}/{images[0]}{images[0].endsWith('.jpg') ? '' : '.png'}"
                 alt=""
             >
         </div>
@@ -54,7 +54,7 @@
                 <button class="shadow" on:click={() => swapImages(0, idx + 1)}>
                     <img
                         class="h-auto max-w-full rounded"
-                        src="/images/{project.id}/{image}.png"
+                        src="/images/{project.id}/{image}{image.endsWith('.jpg') ? '' : '.png'}"
                         alt={project.id}
                     >
                 </button>
