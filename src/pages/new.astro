@@ -15,19 +15,37 @@ const hostName = Astro.url.hostname;
                 {hostName === '???' ? 'jan' : 'fjallnari'}
             </h1>
         </div>
-        <div class="flex flex-col center text-4xl lg:text-right gap-4">
+        <div class="flex flex-col center text-4xl lg:text-right  gap-4">
             <div class="flex flex-col gap-4">
                 <h1 class="">graphic designer</h1>
                 <h1 class="">web developer</h1>
             </div>
             <div class="flex flex-col text-gray-400 gap-4">
                 <h1 class="cursor-pointer hover:text-oxford-300 transition-colors">contact me</h1>
-                <h1 class="cursor-pointer hover:text-oxford-300 transition-colors">about me</h1>
+                <button id="about-me" class="scroll-button flex lg:justify-end">
+                    <h1 class="cursor-pointer hover:text-oxford-300 transition-colors">
+                        about me
+                    </h1>
+                </button>
                 <TopIcons client:load />
                 <!-- <h1 class="cursor-pointer">blog</h1> -->
             </div>
         </div>
     </div>
     <ProjectsBentoGrid client:load />
-    <AboutMeBento client:load />
+    <div id="about-me-anchor">
+        <AboutMeBento client:load />
+    </div>
 </ContentLayout>
+
+<script>
+    const buttons = document.querySelectorAll('button.scroll-button');
+
+    buttons.forEach((button) => {
+        console.log(button.id);
+        button.addEventListener('click', () => {
+            const element = document.getElementById(button.id + '-anchor');
+            element?.scrollIntoView({ behavior: 'smooth'});
+        });
+    });
+</script>

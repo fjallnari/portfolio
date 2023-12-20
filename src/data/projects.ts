@@ -69,7 +69,7 @@ const PROJECTS: ProjectInterface[] = [
         description: '',
         writeup: ``,
         tags: [],
-        images: ['card-black.jpg', 'envelope.jpg'],
+        images: ['card-black.jpg', 'envelope.jpg', 'land-rover'],
         type: 'design'
     },
     // {
