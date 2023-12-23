@@ -1,12 +1,12 @@
 <script>
-    import NewProjectCard from "./NewProjectCard.svelte";
+    import ProjectCard from "./ProjectCard.svelte";
 
 </script>
 
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     <div class="grid gap-6">
-        <NewProjectCard 
+        <ProjectCard 
             name="morii-vtt"
             type="web app"
             colorBg="#252529"
@@ -14,7 +14,7 @@
             imageSrc="/images/morii-vtt/_thumbnail.png"
         />
 
-        <NewProjectCard 
+        <ProjectCard 
             name="ttrpg-compass"
             type="website"
             colorBg="#182326"
@@ -22,7 +22,7 @@
             imageSrc="/images/ttrpg-compass/_thumbnail.png" 
         />
 
-        <NewProjectCard 
+        <ProjectCard 
             name="ape-alliance"
             type="business cards + website design"
             colorBg="#231F20" 
@@ -33,21 +33,21 @@
     </div>
     <div class="grid gap-6">
 
-        <NewProjectCard 
+        <ProjectCard 
             name="terramem"
             type="brand design"
             colorBg="#202419" 
             colorText="#B1B1A7"
             imageSrc="/images/terramem/guidelines.png"
         />
-        <NewProjectCard 
+        <ProjectCard 
             name="shadowtorch"
             type="web & mobile app"
             colorBg="#114470"
             colorText="#7DD3FC"
             imageSrc="/images/shadowtorch/_thumbnail.png" 
         />
-        <NewProjectCard 
+        <ProjectCard 
             name="gw2-cartographer"
             type="web app"
             colorBg="#24363D"

@@ -1,7 +1,7 @@
 <script lang="ts">
     import BentoBox from "./BentoBox.svelte";
-    import KEY_SKILLS from "../../data/key_skills";
-    import ProjectTags from "../ProjectTags.svelte";
+    import KEY_SKILLS from "../data/key_skills";
+    import ProjectTags from "./ProjectTags.svelte";
 
 
 </script>

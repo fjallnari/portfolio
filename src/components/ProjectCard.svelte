@@ -1,31 +1,37 @@
 <script lang="ts">
-    import type ProjectInterface from "../interfaces/ProjectInterface";
-    import ProjectTags from "./ProjectTags.svelte";
+    import { sineOut } from "svelte/easing";
+    import { fade } from "svelte/transition";
 
-    export let project: ProjectInterface;
+    export let name: string;
+    export let type: string;
+    export let colorBg: string;
+    export let colorText: string;
+    export let imageSrc: string;
+
+    let hover = false;
 
 </script>
 
-<a href="/projects/{project.id}" class="grid grid-cols-6 grid-rows-3 gap-2 p-2 cursor-pointer rounded-sm active:bg-oxford-750 hover:bg-oxford-850 hover:shadow transition-colors">
-    <div class="row-span-4 col-span-1 flex flex-row justify-around items-center">
-        <div class="flex flex-col justify-center items-center text-xl text-timberwolf w-24">
-            {#if project.to && project.from}
-                <p>{project.to ?? '-'}</p>
-                <div class="border-gray-500 border-solid border-b-2 w-16 h-1 m-1" />
-                <p>{project.from ?? '-'}</p>
-            {:else}
-                <p>{project.from ?? project.to ?? '-'}</p>
-                
-            {/if}
+
+<button class="h-auto max-w-full rounded-md shadow flex justify-center align-center relative font-eiko cursor-pointer bg-cover" 
+    style="background-image: url({imageSrc});"
+    on:mouseenter={() => hover = true}
+    on:mouseleave={() => hover = false}
+    on:click={() => window.location.href = `/projects/${name}`}
+>
+    <div class="absolute left-0 top-0 rounded w-full h-full hover:opacity-0 transition-opacity ease-in duration-200" style="background-color: {colorBg};"></div>
+    {#if !hover}
+        <div class="w-full h-full flex flex-col gap-2 self-center justify-center text-center absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] p-4 rounded" 
+            style="color: {colorText}; background-color: {colorBg};"
+            transition:fade={{ delay: 0, duration: 0, easing: sineOut }}
+        >
+            <h2 class="text-4xl lg:whitespace-nowrap">{name.replaceAll('-', ' ')}</h2>
+            <h2 class="text-2xl text-gray-400">{type}</h2>
         </div>
-    </div>
-    <div class="col-span-5 text-xl">
-        {project.title}
-    </div>
-    <div class="col-span-5 row-span-2 col-start-2 row-start-2 text-oxford-300">
-        {project.description}
-    </div>
-    <div class="col-span-5 col-start-2 row-start-4 flex flex-row flex-wrap gap-4">
-        <ProjectTags tags={project.tags} />
-    </div>
-</a>
+    {/if}
+    <img class="h-auto max-w-full rounded-md"
+        src="{imageSrc}" 
+        alt=""
+        style="visibility: hidden;"
+    >
+</button>

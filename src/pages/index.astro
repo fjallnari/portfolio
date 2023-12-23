@@ -1,9 +1,63 @@
 ---
-import ContentLayout from '../layouts/ContentLayout.astro';
-import About from '../components/About.svelte';
+import ContentLayout from "../layouts/ContentLayout.astro";
+import ProjectsBento from '../components/ProjectsBento.svelte';
+import AboutMeBento from '../components/AboutMeBento.svelte';
+import ContactMe from '../components/ContactMe.svelte';
+import TopIcons from '../components/TopIcons.svelte';
 
+const hostName = Astro.url.hostname;
 ---
 
 <ContentLayout>
-	<About client:load />
+    <div class="flex flex-row justify-between flex-wrap w-full font-eiko gap-4">
+        <div class="flex flex-col font-eiko lg:text-9xl text-6xl gap-4 mb-6 lg:m-0">
+            <h1 class="">hi, I'm</h1>
+            <h1 class="text-oxford-300">
+                {hostName === '???' ? 'jan rolínek' : 'fjallnari'}
+            </h1>
+        </div>
+        <div class="flex flex-col center text-4xl lg:text-right gap-4">
+            <div class="flex flex-col gap-4">
+                <h1 class="">graphic designer</h1>
+                <h1 class="">web developer</h1>
+            </div>
+            <div class="flex flex-col text-gray-400 gap-4">
+                <button id="contact-me" class="scroll-button flex lg:justify-end">
+                    <h1 class="cursor-pointer hover:text-oxford-300 transition-colors">
+                        contact me
+                    </h1>
+                </button>
+                <button id="about-me" class="scroll-button flex lg:justify-end">
+                    <h1 class="cursor-pointer hover:text-oxford-300 transition-colors">
+                        about me
+                    </h1>
+                </button>
+                <TopIcons client:load />
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- <h1 class="text-4xl pb-4 text-gray-400">projects</h1> -->
+        <ProjectsBento client:load />
+    </div>
+    <div id="about-me-anchor">
+        <h1 class="text-4xl pb-4 text-gray-400">about me</h1>
+        <AboutMeBento client:load />
+    </div>
+    <div id="contact-me-anchor">
+        <!-- <h1 class="text-4xl pb-4 text-gray-400">contact me</h1> -->
+        <ContactMe client:load />
+    </div>
 </ContentLayout>
+
+<script>
+    const buttons = document.querySelectorAll('button.scroll-button');
+
+    buttons.forEach((button) => {
+        console.log(button.id);
+        button.addEventListener('click', () => {
+            const element = document.getElementById(button.id + '-anchor');
+            element?.scrollIntoView({ behavior: 'smooth'});
+        });
+    });
+</script>
