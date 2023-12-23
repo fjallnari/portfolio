@@ -114,6 +114,16 @@ const TAGS: Record<string, { title: string; color: string; icon: string }> = {
         color: '#f24e1e',
         icon: 'devicon:figma'
     },
+    rive: {
+        title: 'Rive',
+        color: '#000000',
+        icon: 'simple-icons:rive'
+    },
+    obsidian: {
+        title: 'Obsidian',
+        color: '#000000',
+        icon: 'logos:obsidian-icon'
+    }
 };
 
 export default TAGS;

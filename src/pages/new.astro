@@ -2,6 +2,7 @@
 import NewLayout from "../layouts/NewLayout.astro";
 import ProjectsBentoGrid from '../components/new/ProjectsBentoGrid.svelte';
 import AboutMeBento from '../components/new/AboutMeBento.svelte';
+import ContactMe from '../components/new/ContactMe.svelte';
 import TopIcons from '../components/new/TopIcons.svelte';
 
 const hostName = Astro.url.hostname;
@@ -12,16 +13,20 @@ const hostName = Astro.url.hostname;
         <div class="flex flex-col font-eiko lg:text-9xl text-6xl gap-4 mb-6 lg:m-0">
             <h1 class="">hi, I'm</h1>
             <h1 class="text-oxford-300">
-                {hostName === '???' ? 'jan' : 'fjallnari'}
+                {hostName === '???' ? 'jan rolínek' : 'fjallnari'}
             </h1>
         </div>
-        <div class="flex flex-col center text-4xl lg:text-right  gap-4">
+        <div class="flex flex-col center text-4xl lg:text-right gap-4">
             <div class="flex flex-col gap-4">
                 <h1 class="">graphic designer</h1>
                 <h1 class="">web developer</h1>
             </div>
             <div class="flex flex-col text-gray-400 gap-4">
-                <h1 class="cursor-pointer hover:text-oxford-300 transition-colors">contact me</h1>
+                <button id="contact-me" class="scroll-button flex lg:justify-end">
+                    <h1 class="cursor-pointer hover:text-oxford-300 transition-colors">
+                        contact me
+                    </h1>
+                </button>
                 <button id="about-me" class="scroll-button flex lg:justify-end">
                     <h1 class="cursor-pointer hover:text-oxford-300 transition-colors">
                         about me
@@ -32,9 +37,17 @@ const hostName = Astro.url.hostname;
             </div>
         </div>
     </div>
-    <ProjectsBentoGrid client:load />
+    <div>
+        <h1 class="text-4xl pb-4 text-gray-400">projects</h1>
+        <ProjectsBentoGrid client:load />
+    </div>
     <div id="about-me-anchor">
+        <h1 class="text-4xl pb-4 text-gray-400">about me</h1>
         <AboutMeBento client:load />
+    </div>
+    <div id="contact-me-anchor">
+        <!-- <h1 class="text-4xl pb-4 text-gray-400">contact me</h1> -->
+        <ContactMe client:load />
     </div>
 </ContentLayout>
 
