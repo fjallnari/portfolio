@@ -32,7 +32,6 @@
 
     </div>
     <div class="grid gap-6">
-
         <ProjectCard 
             name="terramem"
             type="brand design"

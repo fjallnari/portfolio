@@ -19,11 +19,11 @@
     on:mouseleave={() => hover = false}
     on:click={() => window.location.href = `/projects/${name}`}
 >
-    <div class="absolute left-0 top-0 rounded w-full h-full hover:opacity-0 transition-opacity ease-in duration-200" style="background-color: {colorBg};"></div>
-    {#if !hover}
+    <div class="absolute left-0 top-0 rounded w-full h-full opacity-0 transition-opacity ease-in duration-200" style="background-color: {colorBg};"></div>
+    {#if hover}
         <div class="w-full h-full flex flex-col gap-2 self-center justify-center text-center absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] p-4 rounded" 
             style="color: {colorText}; background-color: {colorBg};"
-            transition:fade={{ delay: 0, duration: 0, easing: sineOut }}
+            transition:fade={{ delay: 0, duration: 150, easing: sineOut }}
         >
             <h2 class="text-4xl lg:whitespace-nowrap">{name.replaceAll('-', ' ')}</h2>
             <h2 class="text-2xl text-gray-400">{type}</h2>

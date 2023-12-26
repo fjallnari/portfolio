@@ -2,7 +2,7 @@
 import ContentLayout from "../layouts/ContentLayout.astro";
 import ProjectsBento from '../components/ProjectsBento.svelte';
 import AboutMeBento from '../components/AboutMeBento.svelte';
-import ContactMe from '../components/ContactMe.svelte';
+import ContactMe from '../components/ContactMe.astro';
 import TopIcons from '../components/TopIcons.svelte';
 
 const hostName = Astro.url.hostname;
@@ -46,7 +46,7 @@ const hostName = Astro.url.hostname;
     </div>
     <div id="contact-me-anchor">
         <!-- <h1 class="text-4xl pb-4 text-gray-400">contact me</h1> -->
-        <ContactMe client:load />
+        <ContactMe />
     </div>
 </ContentLayout>
 
