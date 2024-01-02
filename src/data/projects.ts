@@ -25,7 +25,7 @@ const PROJECTS: ProjectInterface[] = [
         website: 'https://shadowtorch.vercel.app/',
         android: 'https://github.com/fjallnari/shadowtorch/releases/tag/android-v.1.1.0',
         tags: ['svelte', 'tailwind', 'capacitor'],
-        images: ['ambient', 'settings', 'overview'],
+        images: ['showcase'],
         type: 'dev'
     },
     {
@@ -69,7 +69,7 @@ const PROJECTS: ProjectInterface[] = [
         description: '',
         writeup: ``,
         tags: [],
-        images: ['card-black.jpg', 'envelope.jpg', 'land-rover'],
+        images: ['card-black.jpg', 'socials.jpg', 'envelope.jpg'],
         type: 'design'
     },
     // {

@@ -9,8 +9,10 @@
 <div class="w-full h-full flex flex-row flex-wrap gap-6">
     <BentoBox title="what i do" flexBasis="20%">
         <div class="pl-2 text-xl font-literata">
-            <p>websites & web apps</p>
-            <p>branding & logo design</p>
+            <p>Full-stack web apps</p>
+            <p>Website design</p>
+            <p>Branding & logo design</p>
+            <p>Layouts</p>
         </div>
     </BentoBox>
     <BentoBox title="where i learn">

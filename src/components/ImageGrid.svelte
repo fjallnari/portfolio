@@ -49,16 +49,18 @@
                 alt=""
             >
         </div>
-        <div class="grid gap-4" style="grid-template-columns: repeat({images.length - 1}, minmax(0, 1fr));">
-            {#each images.slice(1) as image, idx}
-                <button class="shadow" on:click={() => swapImages(0, idx + 1)}>
-                    <img
-                        class="h-auto max-w-full rounded"
-                        src="/images/{project.id}/{image}{image.endsWith('.jpg') ? '' : '.png'}"
-                        alt={project.id}
-                    >
-                </button>
-            {/each}
-        </div>
+        {#if images.length > 1}
+            <div class="grid gap-4" style="grid-template-columns: repeat({images.length - 1}, minmax(0, 1fr));">
+                {#each images.slice(1) as image, idx}
+                    <button class="shadow" on:click={() => swapImages(0, idx + 1)}>
+                        <img
+                            class="h-auto max-w-full rounded"
+                            src="/images/{project.id}/{image}{image.endsWith('.jpg') ? '' : '.png'}"
+                            alt={project.id}
+                        >
+                    </button>
+                {/each}
+            </div>
+        {/if}
     </div>
 {/if}
