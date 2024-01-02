@@ -66,8 +66,8 @@ const PROJECTS: ProjectInterface[] = [
     {
         id: 'ape-alliance',
         title: 'Ape Alliance',
-        description: '',
-        writeup: ``,
+        description: 'Design of supporting materials for a fictional organization that aims to protect and preserve apes.',
+        writeup: `Another assignment for GDII, this time we were to design supporting materials for a fictional organization that another student designed. I've been given a brand manual for Ape Alliance (a non-profit focused on protecting and helping various apes) and tasked with designing business cards, envelopes, simple socials posts & website. As the brand design is corporate in nature, one of the challenges was to have the supporting materials be either more light-hearted or having a natural vibe to better promote the brand mission. I went with minimalist flat design to honour the manual accented with cut-out ape silhouettes greeting the viewer in comics bubbles.`,
         tags: [],
         images: ['card-black.jpg', 'socials.jpg', 'envelope.jpg'],
         type: 'design'

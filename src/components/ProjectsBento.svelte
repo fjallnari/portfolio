@@ -24,7 +24,7 @@
 
         <ProjectCard 
             name="ape-alliance"
-            type="business cards + website design"
+            type="business cards + envelopes + socials"
             colorBg="#231F20" 
             colorText="#E9E9E9"
             imageSrc="images/ape-alliance/card-black.jpg" 
