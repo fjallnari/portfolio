@@ -10,7 +10,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="bg-oxford-900 text-alabaster h-full font-montserrat">
+<html lang="en" class="bg-oxford-900 text-alabaster h-full font-eiko">
     <head>
         <meta charset="UTF-8" />
         <meta name="description" content="Astro description" />
@@ -22,7 +22,7 @@ const { title } = Astro.props;
     <script>
         import "../../icons-bundle.js";
     </script>
-    <body class="h-full">
+    <body class="h-full flex justify-center text-alabaster">
         <slot />
     </body>
 </html>
@@ -38,13 +38,15 @@ const { title } = Astro.props;
             white 60%
         );
 
-        background: rgb(15,22,36);
-        background: -moz-linear-gradient(135deg, rgba(15,22,36,1) 25%, rgba(12,17,29,1) 75%);
+        /* background: rgb(15,22,36);
+        background: -moz-linear-gradient(135deg, rgba(15,22,36,1) 25%, #0c111d 75%);
         background: -webkit-linear-gradient(135deg, rgba(15,22,36,1) 25%, rgba(12,17,29,1) 75%);
         background: linear-gradient(135deg, rgba(15,22,36,1) 25%, rgba(12,17,29,1) 75%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f1624",endColorstr="#0c111d",GradientType=1);
         background-repeat: no-repeat;
-    	background-attachment: fixed;
+    	background-attachment: fixed; */
+
+        background-color: #0F1624;
     }
     code {
         font-family:
@@ -57,4 +59,30 @@ const { title } = Astro.props;
             Courier New,
             monospace;
     }
+
+    @font-face {
+        font-family: 'Eiko';
+        src: url('/fonts/PPEiko-Heavy.otf') format('opentype');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Eiko';
+        src: url('/fonts/PPEiko-Thin.otf') format('opentype');
+        font-weight: lighter;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Eiko';
+        src: url('/fonts/PPEiko-Medium.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+
 </style>

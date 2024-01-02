@@ -1,0 +1,17 @@
+---
+import ImageGrid from "./ImageGrid.svelte";
+import MarkdownRenderer from "./MarkdownRenderer.svelte";
+
+const { project } = Astro.props;
+
+---
+
+<h1 class="text-6xl">{project.title}</h1>
+<p class="text-xl font-literata text-left leading-6">{project.description}</p>
+<ImageGrid {project} client:load />
+<div>
+    <h2 class="text-alabaster font-eiko text-4xl m-0">design process</h2>
+    <div class="font-literata font-light pb-8 text-xl text-justify">
+        <MarkdownRenderer source={project.writeup} />
+    </div>
+</div>

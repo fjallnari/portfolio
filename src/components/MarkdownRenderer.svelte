@@ -28,7 +28,8 @@
         /* color: #66999B; */
     }
     :global(.md-container p) {
-        margin: 0.75em 0 0.75em 0;
+        margin: 1em 0 1em 0;
+        line-height: 1.5;
     }
 
     :global(.md-container a) {

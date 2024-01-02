@@ -87,8 +87,43 @@ const TAGS: Record<string, { title: string; color: string; icon: string }> = {
     capacitor: {
         title: 'Capacitor',
         color: '#000000',
-        icon: 'devicon:capacitor'
+        icon: 'vscode-icons:file-type-capacitor'
     },
+    aff_photo: {
+        title: 'Affinity Photo',
+        color: '#000000',
+        icon: 'vscode-icons:file-type-affinityphoto'
+    },
+    aff_designer: {
+        title: 'Affinity Designer',
+        color: '#000000',
+        icon: 'vscode-icons:file-type-affinitydesigner'
+    },
+    aff_publisher: {
+        title: 'Affinity Publisher',
+        color: '#000000',
+        icon: 'vscode-icons:file-type-affinitypublisher'
+    },
+    vscode: {
+        title: 'VSCode',
+        color: '#007acc',
+        icon: 'vscode-icons:file-type-vscode'
+    },
+    figma: {
+        title: 'Figma',
+        color: '#f24e1e',
+        icon: 'devicon:figma'
+    },
+    rive: {
+        title: 'Rive',
+        color: '#000000',
+        icon: 'simple-icons:rive'
+    },
+    obsidian: {
+        title: 'Obsidian',
+        color: '#000000',
+        icon: 'logos:obsidian-icon'
+    }
 };
 
 export default TAGS;

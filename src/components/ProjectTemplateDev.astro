@@ -1,0 +1,21 @@
+---
+import ProjectTags from './ProjectTags.svelte';
+import ProjectLinksInline from './ProjectLinksInline.svelte';
+import ImageGrid from './ImageGrid.svelte';
+import ProjectWriteup from './ProjectWriteup.svelte';
+
+
+const { project } = Astro.props;
+---
+
+<div class="flex flex-row justify-between items-center flex-wrap w-full text-timberwolf gap-8">
+    <h1 class="text-6xl">{project.title}</h1>
+    <ProjectLinksInline {project} client:load />
+</div>
+<p class="text-xl font-literata text-left leading-6">{project.description}</p>
+<div class="flex flex-row justify-start items-center flex-wrap gap-4 gap-y-4">
+    <ProjectTags tags={project?.tags} client:load />
+</div>
+
+<ImageGrid {project} client:load />
+<ProjectWriteup {project} client:load />

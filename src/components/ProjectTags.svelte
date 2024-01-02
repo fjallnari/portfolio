@@ -2,14 +2,14 @@
     import Icon from "@iconify/svelte";
     import TAGS from "../data/tags";
 
-    export let tags: string[];
-    export let wantBg: boolean = false;
+    export let tags: string[] = [];
+    export let darkerBg: boolean = true;
 
 </script>
 
 {#each tags as tag}
-    <div class="flex flex-row justify-center items-center gap-1 rounded-sm {wantBg ? 'shadow bg-oxford-800 py-1 px-2' : ''}">
-        <Icon class="w-4 h-4" icon={TAGS[tag].icon} />
-        <div class="text-sm">{TAGS[tag].title}</div>
+    <div class="flex flex-row justify-center items-center gap-2 rounded shadow-md py-2 px-4 {darkerBg ? ' bg-oxford-800 hover:bg-oxford-750' : 'bg-oxford-750'}">
+        <Icon class="w-8 h-8" icon={TAGS[tag].icon} />
+        <h2 class="text-xl font-literata">{TAGS[tag].title}</h2>
     </div>
 {/each}
