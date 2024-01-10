@@ -9,7 +9,7 @@ const { project } = Astro.props;
 ---
 
 <div class="flex flex-row justify-between items-center flex-wrap w-full text-timberwolf gap-8">
-    <h1 class="text-6xl">{project.title}</h1>
+    <h1 class="text-6xl">{project.title.toLowerCase()}</h1>
     <ProjectLinksInline {project} client:load />
 </div>
 <p class="text-xl font-literata text-left leading-6">{project.description}</p>

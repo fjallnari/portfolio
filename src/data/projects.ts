@@ -31,7 +31,7 @@ const PROJECTS: ProjectInterface[] = [
     {
         id: 'morii-vtt',
         title: 'Morii VTT',
-        description: 'Half-vtt (i.e. no maps) for playing tabletop RPGs. It currently supports D&D 5E, Cairn and Shadowdark.',
+        description: 'A real-time half-vtt (i.e. no maps) for playing tabletop RPGs. Currently supports D&D 5E, Cairn and Shadowdark.',
         writeup: '',
         from: '2022',
         to: '2023',
