@@ -3,7 +3,6 @@ import ContentLayout from "../layouts/ContentLayout.astro";
 import ProjectsBento from '../components/ProjectsBento.svelte';
 import AboutMeBento from '../components/AboutMeBento.svelte';
 import ContactMe from '../components/ContactMe.astro';
-import TopIcons from '../components/TopIcons.svelte';
 
 const hostName = Astro.url.hostname;
 ---
@@ -13,7 +12,7 @@ const hostName = Astro.url.hostname;
         <div class="flex flex-col font-eiko lg:text-9xl text-6xl gap-4 mb-6 lg:m-0">
             <h1 class="">hi, I'm</h1>
             <h1 class="text-oxford-300">
-                {hostName === '???' ? 'jan rolínek' : 'fjallnari'}
+                {hostName === 'jrolinek.com' ? 'jan rolínek' : 'fjallnari'}
             </h1>
         </div>
         <div class="flex flex-col center text-4xl lg:text-right gap-4">
@@ -57,7 +56,6 @@ const hostName = Astro.url.hostname;
     const buttons = document.querySelectorAll('button.scroll-button');
 
     buttons.forEach((button) => {
-        console.log(button.id);
         button.addEventListener('click', () => {
             const element = document.getElementById(button.id + '-anchor');
             element?.scrollIntoView({ behavior: 'smooth'});

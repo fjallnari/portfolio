@@ -1,9 +1,12 @@
 ---
 import Layout from "./Layout.astro";
 
+const hostName = Astro.url.hostname;
+const title = hostName === "jrolinek.com" ? "jrolinek" : "fjallnari";
+
 ---
 
-<Layout title="fjallnari">
+<Layout {title}>
 	<main class="lg:w-3/4 lg:m-24 m-4 p-6 max-w-[100% - 4rem] m-auto lg:mt-24 h-full flex flex-col gap-20">
 		<slot />
 	</main>
