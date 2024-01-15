@@ -10,8 +10,9 @@
     <BentoBox title="what i do" flexBasis="20%">
         <div class="pl-2 text-xl font-literata">
             <p>Full-stack web apps</p>
-            <p>Website design</p>
-            <p>Branding & logo design</p>
+            <p>Website design (UI/UX)</p>
+            <p>Branding</p>
+            <p>Logo design</p>
             <p>Layouts</p>
         </div>
     </BentoBox>
