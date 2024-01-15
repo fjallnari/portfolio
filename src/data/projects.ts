@@ -32,7 +32,8 @@ const PROJECTS: ProjectInterface[] = [
         id: 'morii-vtt',
         title: 'Morii VTT',
         description: 'A real-time half-vtt (i.e. no maps) for playing tabletop RPGs. Currently supports D&D 5E, Cairn and Shadowdark.',
-        writeup: '',
+        writeup: `My largest full-stack project so far, with quite a few moving parts. I've started it as a way to improve in Svelte, and learned a lot of new things and techniques with it. Most of the work was focused on designing & creating user-friendly interfaces + dashboards and real-time sockets-based communication/sheet updates. The technical stack itself isn't all that interesting, the backend consists of a Node.js Express server + simple Socket.io server setup basically as a relay. Auth is handled through a custom JWT implementation. The database I've used is MongoDB & the frontend is SPA in Svelte. Deployment is setup using Dockerfiles & run on a VPS through Dokku.
+        \nVTTs (virtual tabletop) for TTRPGs (tabletop RPGs) serve as a way for users to comfortably play their games in real time over the net. Morii VTT provides campaign management, live games with editable character sheets, chat with dice rolling and GM (game master) overviews of useful information/specific mechanics. The character sheets themselves have fully incorporated dice rolling. Overall, I've tried to maintain the traditional look & feel of paper-based sheets while offering a better UX in a clean minimal design. For brevity, I've detailed all the features in the project [README](https://github.com/fjallnari/morii-vtt/blob/main/README.md).`,
         from: '2022',
         to: '2023',
         repo: 'https://github.com/fjallnari/morii-vtt',
