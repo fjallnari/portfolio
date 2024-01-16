@@ -24,10 +24,10 @@
 
         <ProjectCard 
             name="ape-alliance"
-            type="business cards + envelopes + socials"
+            type="brand applications"
             colorBg="#231F20" 
             colorText="#E9E9E9"
-            imageSrc="images/ape-alliance/card-black.jpg" 
+            imageSrc="images/ape-alliance/website-mockup.png" 
         />
 
     </div>
