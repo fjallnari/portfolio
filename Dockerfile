@@ -1,5 +1,4 @@
-FROM node:20
-
+FROM node:lts AS runtime
 WORKDIR /app
 
 RUN npm install -g pnpm
@@ -7,7 +6,9 @@ RUN npm install -g pnpm
 COPY package*.json ./pnpm-lock.yaml ./
 
 RUN pnpm install --frozen-lockfile
-
 COPY . .
+RUN pnpm run build
 
-CMD pnpm run build && node build
+ENV HOST=0.0.0.0
+ENV PORT=5000
+CMD node ./dist/server/entry.mjs
