@@ -1,13 +1,13 @@
-FROM oven/bun
+FROM node:20
 
 WORKDIR /app
-COPY package.json package.json
-RUN bun install
+
+RUN npm install -g pnpm
+
+COPY package*.json ./pnpm-lock.yaml ./
+
+RUN pnpm install --frozen-lockfile
 
 COPY . .
-RUN bun --bun run build
 
-ENV HOST=0.0.0.0
-ENV PORT=5000
-
-ENTRYPOINT ["bun", "--bun", "./dist/server/entry.mjs"]
+CMD pnpm run build && node build
