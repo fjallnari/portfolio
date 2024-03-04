@@ -1,9 +1,8 @@
 <script lang="ts">
-    import type ProjectInterface from "../interfaces/ProjectInterface";
+    import type { GetImageResult } from "astro";
 
-    export let project: ProjectInterface;
+    export let images: GetImageResult[];
 
-    let images = project.images ?? [];
     let scrollY = 0;
 
     const swapImages = (idxA: number, idxB: number) => {
@@ -45,18 +44,18 @@
                 on:mouseleave={offZoom}
                 on:focus={() => {}}
                 class="h-full w-full rounded origin-center-center object-cover"
-                src="/images/{project.id}/{images[0]}{images[0].endsWith('.jpg') ? '' : '.png'}"
+                src={images[0].src}
                 alt=""
             >
         </div>
         {#if images.length > 1}
             <div class="grid gap-4" style="grid-template-columns: repeat({images.length - 1}, minmax(0, 1fr));">
-                {#each images.slice(1) as image, idx}
+                {#each images.slice(1) as _, idx}
                     <button class="shadow" on:click={() => swapImages(0, idx + 1)}>
                         <img
                             class="h-auto max-w-full rounded"
-                            src="/images/{project.id}/{image}{image.endsWith('.jpg') ? '' : '.png'}"
-                            alt={project.id}
+                            src={images[idx + 1].src}
+                            alt=""
                         >
                     </button>
                 {/each}

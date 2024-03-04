@@ -3,10 +3,32 @@ import ContentLayout from '../../layouts/ContentLayout.astro';
 import ProjectTemplateDesign from '../../components/ProjectTemplateDesign.astro';
 import ProjectTemplateDev from '../../components/ProjectTemplateDev.astro';
 import PROJECTS from '../../data/projects';
+import type { GetImageResult } from 'astro';
+import { getImage } from 'astro:assets';
 
 const { projectID } = Astro.params;
 
 const project = PROJECTS.find((project) => project.id === projectID);
+// This is a workaround for the fact that import.meta.glob doesn't work with dynamic paths
+const imagesGlob = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*/*.{jpeg,jpg,png,gif}');
+
+let images: GetImageResult[] = (
+    await Promise.all(
+        Object.entries(imagesGlob).map( async ([key, importImage]) => {
+            if (project?.images) {
+                // Filter out images that are not of the project 
+                // && not specified in the project's images array
+                for (let validImageName of project?.images) {
+                    if (key.includes(`/src/assets/${project.id}/${validImageName}.png`)) {
+                        const src = await importImage();
+                        const image = await getImage({ src: src.default, alt: validImageName });
+                        return image;
+                    }
+                }
+            }
+        })
+    )
+).filter((image) => image) as GetImageResult[];
 
 ---
 
@@ -16,8 +38,8 @@ const project = PROJECTS.find((project) => project.id === projectID);
         <a href="/" class="w-fit h-fit text-gray-400 hover:text-oxford-300 active:text-oxford-300 transition-colors text-2xl">← back</a>
         {
             {
-                'dev': <ProjectTemplateDev {project} />,
-                'design': <ProjectTemplateDesign {project} />
+                'dev': <ProjectTemplateDev {project} {images} />,
+                'design': <ProjectTemplateDesign {project} {images} />
             }[project?.type ?? 'dev'] || <ProjectTemplateDev {project} /> /* default to dev, should never happen */
         }
     </div>

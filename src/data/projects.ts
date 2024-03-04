@@ -10,7 +10,11 @@ const PROJECTS: ProjectInterface[] = [
         repo: 'https://github.com/fjallnari/ttrpg-compass',
         website: 'https://compass.fjallnari.com/',
         tags: ['svelte', 'tailwind', 'go', 'redis', 'python'],
-        images: ['similarity', 'filters', 'simple'],
+        images: [
+            '_similarity', 
+            'filters', 
+            'simple'
+        ],
         type: 'dev'
     },
     {
@@ -25,7 +29,9 @@ const PROJECTS: ProjectInterface[] = [
         website: 'https://shadowtorch.vercel.app/',
         android: 'https://github.com/fjallnari/shadowtorch/releases/tag/android-v.1.1.0',
         tags: ['svelte', 'tailwind', 'capacitor'],
-        images: ['showcase'],
+        images: [
+            'showcase'
+        ],
         type: 'dev'
     },
     {
@@ -39,7 +45,14 @@ const PROJECTS: ProjectInterface[] = [
         repo: 'https://github.com/fjallnari/morii-vtt',
         website: 'https://moriivtt.com/',
         tags: ['svelte', 'node', 'mongodb', 'socketio'],
-        images: ['morii-5e-sheet', 'morii-gm-view', 'cairn-sheet', 'cairn-gm-view',  'morii-quick-create', 'shadowdark-sheet'],
+        images: [
+            '_morii-5e-sheet', 
+            'morii-gm-view', 
+            'cairn-sheet', 
+            'cairn-gm-view',  
+            'morii-quick-create', 
+            'shadowdark-sheet'
+        ],
         type: 'dev'
     },
     {
@@ -52,7 +65,11 @@ const PROJECTS: ProjectInterface[] = [
         repo: 'https://github.com/fjallnari/gw2-cartographer',
         website: 'https://gw2-cartographer.fjallnari.com/',
         tags: ['svelte', 'tailwind', 'canvas'],
-        images: ['imap-tangled-depths', 'fmap-auric-basin', 'bmap-vabbi'],
+        images: [
+            '_imap-tangled-depths', 
+            'fmap-auric-basin', 
+            'bmap-vabbi'
+        ],
         type: 'dev'
     },
     {
@@ -61,7 +78,14 @@ const PROJECTS: ProjectInterface[] = [
         description: 'Brand design for a fictional far-future company that provides monthly subscription boxes with experiences from bygone eras.',
         writeup: `This project was one of of the assignments of GDII, first we were to think up a fictional company (with focus on one of our childhood dream-professions) and give it a suitable name. From mixing the dream of wanting to be an explorer and the genre of cyberpunk came the idea of a company in a far-future in which all that remains of flowers and trees are fading memories, a company which would provide wealthy subscribers with monthly boxes of a fully-fledged virtual experience of times long gone.\n\nThe name *terramem* is a simple mash-up of *terra* + *mem*, latin words for the Earth and memory respectively - memory/remembrance of Earth.`,
         tags: [],
-        images: ['guidelines', 'logo-concept', 'clear-space', 'colors', 'color-variants', 'secondary'],
+        images: [
+            '_guidelines', 
+            'logo-concept', 
+            'clear-space', 
+            'colors', 
+            'color-variants', 
+            'secondary'
+        ],
         type: 'design'
     },
     {
@@ -70,7 +94,12 @@ const PROJECTS: ProjectInterface[] = [
         description: 'Design of supporting materials for a fictional organization that aims to protect and preserve apes.',
         writeup: `Another assignment for GDII, this time we were to design supporting materials for a fictional organization that another student designed. I've been given a brand manual for Ape Alliance (a non-profit focused on protecting and helping various apes) and tasked with designing business cards, envelopes, simple socials posts & website. As the brand design is corporate in nature, one of the challenges was to have the supporting materials be either more light-hearted or having a natural vibe to better promote the brand mission. I went with minimalist flat design to honour the manual accented with cut-out ape silhouettes greeting the viewer in comics bubbles.`,
         tags: [],
-        images: ['website-mockup', 'card.jpg', 'socials.jpg', 'envelope.jpg'],
+        images: [
+            '_website-mockup', 
+            'card', 
+            'socials', 
+            'envelope'
+        ],
         type: 'design'
     },
     // {

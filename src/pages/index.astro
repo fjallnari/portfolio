@@ -1,8 +1,25 @@
 ---
 import ContentLayout from "../layouts/ContentLayout.astro";
-import ProjectsBento from '../components/ProjectsBento.svelte';
 import AboutMeBento from '../components/AboutMeBento.svelte';
 import ContactMe from '../components/ContactMe.astro';
+import ProjectCard from "../components/ProjectCard.svelte";
+import { getImage } from "astro:assets";
+
+import tnMorii from "../assets/morii-vtt/_thumbnail.png";
+import tnTtrpgCompass from "../assets/ttrpg-compass/_thumbnail.png";
+import tnApeAlliance from "../assets/ape-alliance/_website-mockup.png";
+import tnTerramem from "../assets/terramem/_guidelines.png";
+import tnShadowtorch from "../assets/shadowtorch/_thumbnail.png";
+import tnGw2Cartographer from "../assets/gw2-cartographer/_thumbnail.jpg";
+
+const thumbnails = await Promise.all([
+    tnMorii,
+    tnTtrpgCompass, 
+    tnApeAlliance, 
+    tnTerramem, 
+    tnShadowtorch,
+    tnGw2Cartographer
+].map(async (image) => await getImage({ src: image })));
 
 const hostName = Astro.url.hostname;
 ---
@@ -39,7 +56,57 @@ const hostName = Astro.url.hostname;
     </div>
     <div>
         <!-- <h1 class="text-4xl pb-4 text-gray-400">projects</h1> -->
-        <ProjectsBento client:load />
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid gap-6">
+                <ProjectCard client:load
+                    name="morii-vtt"
+                    type="web app"
+                    colorBg="#252529"
+                    colorText="#E2E2E2"
+                    imageSrc={thumbnails[0].src}
+                />
+        
+                <ProjectCard client:load
+                    name="ttrpg-compass"
+                    type="website"
+                    colorBg="#182326"
+                    colorText="#B69048"
+                    imageSrc={thumbnails[1].src} 
+                />
+        
+                <ProjectCard client:load
+                    name="ape-alliance"
+                    type="brand applications"
+                    colorBg="#231F20" 
+                    colorText="#E9E9E9"
+                    imageSrc={thumbnails[2].src} 
+                />
+        
+            </div>
+            <div class="grid gap-6">
+                <ProjectCard client:load
+                    name="terramem"
+                    type="brand design"
+                    colorBg="#202419" 
+                    colorText="#B1B1A7"
+                    imageSrc={thumbnails[3].src}
+                />
+                <ProjectCard client:load
+                    name="shadowtorch"
+                    type="web & mobile app"
+                    colorBg="#114470"
+                    colorText="#7DD3FC"
+                    imageSrc={thumbnails[4].src}
+                />
+                <ProjectCard client:load
+                    name="gw2-cartographer"
+                    type="web app"
+                    colorBg="#24363D"
+                    colorText="#B69048"
+                    imageSrc={thumbnails[5].src}
+                />
+            </div>
+        </div>
     </div>
     <div id="about-me-anchor">
         <h1 class="text-4xl pb-4 text-gray-400">about me</h1>
