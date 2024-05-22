@@ -13,7 +13,7 @@
 </script>
 
 
-<button class="h-auto max-w-full rounded-md shadow flex justify-center align-center relative font-eiko cursor-pointer bg-cover" 
+<button class="h-auto max-w-full rounded-md shadow flex justify-center align-center relative font-eiko cursor-pointer bg-cover aspect-auto" 
     style="background-image: url({imageSrc});"
     on:mouseenter={() => hover = true}
     on:mouseleave={() => hover = false}

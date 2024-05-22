@@ -43,7 +43,7 @@
                 on:mousemove={onZoom}
                 on:mouseleave={offZoom}
                 on:focus={() => {}}
-                class="h-full w-full rounded origin-center-center object-cover"
+                class="h-full w-full rounded origin-center-center object-cover aspect-auto"
                 src={images[0].src}
                 alt=""
             >
@@ -53,7 +53,7 @@
                 {#each images.slice(1) as _, idx}
                     <button class="shadow" on:click={() => swapImages(0, idx + 1)}>
                         <img
-                            class="h-auto max-w-full rounded"
+                            class="h-auto max-w-full rounded aspect-auto"
                             src={images[idx + 1].src}
                             alt=""
                         >
