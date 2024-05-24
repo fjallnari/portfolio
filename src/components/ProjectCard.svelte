@@ -18,7 +18,8 @@
     on:mouseenter={() => hover = true}
     on:mouseleave={() => hover = false}
     on:click={() => window.location.href = `/projects/${name}`}
-    name={name}
+    id={name}
+    title={name}
 >
     <div class="absolute left-0 top-0 rounded w-full h-full opacity-0 transition-opacity ease-in duration-200" style="background-color: {colorBg};"></div>
     {#if hover}
