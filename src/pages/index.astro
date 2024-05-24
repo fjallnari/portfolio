@@ -6,18 +6,18 @@ import ProjectCard from "../components/ProjectCard.svelte";
 import { getImage } from "astro:assets";
 
 import tnMorii from "../assets/morii-vtt/_thumbnail-3-2.png";
-import tnTtrpgCompass from "../assets/ttrpg-compass/_thumbnail.png";
-import tnApeAlliance from "../assets/ape-alliance/_website-mockup.png";
 import tnTerramem from "../assets/terramem/_guidelines.png";
+import tnTtrpgCompass from "../assets/ttrpg-compass/_thumbnail.png";
 import tnShadowtorch from "../assets/shadowtorch/_thumbnail-3-2.png";
+import tnApeAlliance from "../assets/ape-alliance/_website-mockup.png";
 import tnGw2Cartographer from "../assets/gw2-cartographer/_thumbnail.jpg";
 
 const thumbnails = await Promise.all([
     tnMorii,
-    tnTtrpgCompass, 
-    tnApeAlliance, 
-    tnTerramem, 
+    tnTerramem,
+    tnTtrpgCompass,
     tnShadowtorch,
+    tnApeAlliance,
     tnGw2Cartographer
 ].map(async (image) => await getImage({ src: image })));
 
@@ -71,7 +71,7 @@ const hostName = Astro.url.hostname;
                     type="website"
                     colorBg="#182326"
                     colorText="#B69048"
-                    imageSrc={thumbnails[1].src} 
+                    imageSrc={thumbnails[2].src} 
                 />
         
                 <ProjectCard client:load
@@ -79,7 +79,7 @@ const hostName = Astro.url.hostname;
                     type="brand applications"
                     colorBg="#231F20" 
                     colorText="#E9E9E9"
-                    imageSrc={thumbnails[2].src} 
+                    imageSrc={thumbnails[4].src} 
                 />
         
             </div>
@@ -89,14 +89,14 @@ const hostName = Astro.url.hostname;
                     type="brand design"
                     colorBg="#202419" 
                     colorText="#B1B1A7"
-                    imageSrc={thumbnails[3].src}
+                    imageSrc={thumbnails[1].src}
                 />
                 <ProjectCard client:load
                     name="shadowtorch"
                     type="web & mobile app"
                     colorBg="#114470"
                     colorText="#7DD3FC"
-                    imageSrc={thumbnails[4].src}
+                    imageSrc={thumbnails[3].src}
                 />
                 <ProjectCard client:load
                     name="gw2-cartographer"
