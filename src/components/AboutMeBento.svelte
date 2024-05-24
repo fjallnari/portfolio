@@ -12,7 +12,7 @@
             <p>Full-stack web apps</p>
             <p>Website design (UI/UX)</p>
             <p>Branding</p>
-            <p>Logo design</p>
+            <!-- <p>Logo design</p> -->
             <p>Layouts</p>
         </div>
     </BentoBox>
