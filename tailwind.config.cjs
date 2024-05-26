@@ -37,6 +37,9 @@ module.exports = {
             },
             transformOrigin: {
                 'center-center': 'center center'
+            },
+            aspectRatio: {
+                '3/2': '3/2 auto'
             }
         }
     },

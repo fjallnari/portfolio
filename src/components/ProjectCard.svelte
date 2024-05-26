@@ -13,7 +13,7 @@
 </script>
 
 
-<button class="h-auto max-w-full rounded-md shadow flex justify-center align-center relative font-eiko cursor-pointer bg-cover aspect-[3/2]" 
+<button class="h-auto max-w-full rounded-md shadow flex justify-center align-center relative font-eiko cursor-pointer bg-cover md:aspect-3/2"
     style="background-image: url({imageSrc});"
     on:mouseenter={() => hover = true}
     on:mouseleave={() => hover = false}
@@ -31,7 +31,7 @@
             <h2 class="text-2xl text-gray-400">{type}</h2>
         </div>
     {/if}
-    <img class="h-auto max-w-full rounded-md"
+    <img class="h-auto max-w-full rounded-md md:aspect-video"
         src="{imageSrc}" 
         alt=""
         style="visibility: hidden;"

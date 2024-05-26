@@ -6,7 +6,7 @@
 
 </script>
 
-<div class="w-full h-full flex flex-row flex-wrap gap-6">
+<div class="w-full h-full flex flex-row flex-wrap gap-4">
     <BentoBox title="what i do" flexBasis="20%">
         <div class="pl-2 text-xl font-literata">
             <p>Full-stack web apps</p>
