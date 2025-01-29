@@ -56,6 +56,22 @@ const PROJECTS: ProjectInterface[] = [
         type: 'dev'
     },
     {
+        id: 'glarmir-leatherworks',
+        title: 'Glarmir Leatherworks',
+        description: 'A project for a local leatherworker who wanted a simple website to showcase their products and provide a way for customers to contact them.',
+        writeup: ``,
+        from: '2024',
+        to: '2024',
+        website: 'https://glarmirleatherworks.com/',
+        tags: ['astro', 'svelte', 'tailwind', 'sanity', 'resend'],
+        images: [
+            '_collage',
+            '_product-page',
+            'mockup-bcard'
+        ],
+        type: 'dev'
+    },
+    {
         id: 'gw2-cartographer',
         title: 'GW2 Cartographer',
         description: 'Tool to generate high resolution Guild Wars 2 maps from the official API tiles',

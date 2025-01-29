@@ -6,7 +6,7 @@ import ProjectCard from "../components/ProjectCard.svelte";
 import { getImage } from "astro:assets";
 
 import tnMorii from "../assets/morii-vtt/_thumbnail-3-2.png";
-import tnTerramem from "../assets/terramem/_guidelines.png";
+import tnGlarmir from "../assets/glarmir-leatherworks/_collage.png";
 import tnTtrpgCompass from "../assets/ttrpg-compass/_thumbnail-3-2.png";
 import tnShadowtorch from "../assets/shadowtorch/_thumbnail-3-2.png";
 import tnApeAlliance from "../assets/ape-alliance/_website-mockup.png";
@@ -14,7 +14,7 @@ import tnGw2Cartographer from "../assets/gw2-cartographer/_thumbnail.jpg";
 
 const thumbnails = await Promise.all([
     tnMorii,
-    tnTerramem,
+    tnGlarmir,
     tnTtrpgCompass,
     tnShadowtorch,
     tnApeAlliance,
@@ -84,11 +84,18 @@ const hostName = Astro.url.hostname;
         
             </div>
             <div class="grid gap-4">
-                <ProjectCard client:load
+                <!-- <ProjectCard client:load
                     name="terramem"
                     type="brand design"
                     colorBg="#202419" 
                     colorText="#B1B1A7"
+                    imageSrc={thumbnails[1].src}
+                /> -->
+                <ProjectCard client:load
+                    name="glarmir-leatherworks"
+                    type="website"
+                    colorBg="#2A3323" 
+                    colorText="#AEBAA0"
                     imageSrc={thumbnails[1].src}
                 />
                 <ProjectCard client:load

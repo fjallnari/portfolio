@@ -123,6 +123,16 @@ const TAGS: Record<string, { title: string; color: string; icon: string }> = {
         title: 'Obsidian',
         color: '#000000',
         icon: 'logos:obsidian-icon'
+    },
+    sanity: {
+        title: 'Sanity',
+        color: '#000000',
+        icon: 'simple-icons:sanity'
+    },
+    resend: {
+        title: 'Resend',
+        color: '#000000',
+        icon: 'simple-icons:resend'
     }
 };
 
