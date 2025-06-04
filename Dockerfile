@@ -1,7 +1,7 @@
-FROM node:lts AS runtime
+FROM node:24-slim AS runtime
 WORKDIR /app
 
-RUN npm install -g pnpm@8.5.1
+RUN npm install -g pnpm
 
 COPY package*.json ./pnpm-lock.yaml ./
 
@@ -11,4 +11,5 @@ RUN pnpm run build
 
 ENV HOST=0.0.0.0
 ENV PORT=5000
+
 CMD node ./dist/server/entry.mjs
