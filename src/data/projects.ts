@@ -79,6 +79,7 @@ const PROJECTS: ProjectInterface[] = [
         from: '2022',
         to: '2023',
         repo: 'https://github.com/fjallnari/gw2-cartographer',
+        website: 'https://cartographer.fjallnari.com/',
         tags: ['svelte', 'tailwind', 'canvas'],
         images: [
             '_imap-tangled-depths', 
