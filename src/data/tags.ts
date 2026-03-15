@@ -133,7 +133,27 @@ const TAGS: Record<string, { title: string; color: string; icon: string }> = {
         title: 'Resend',
         color: '#000000',
         icon: 'simple-icons:resend'
-    }
+    },
+    graphql: {
+        title: 'GraphQL',
+        color: '#000000',
+        icon: 'vscode-icons:file-type-graphql'
+    },
+    sql: {
+        title: 'SQL',
+        color: '#000000',
+        icon: 'vscode-icons:file-type-sql'
+    },
+    angular: {
+        title: 'Angular',
+        color: '#dd0031',
+        icon: 'vscode-icons:file-type-angular'
+    },
+    neo4j: {
+        title: 'Neo4j',
+        color: '#000000',
+        icon: 'vscode-icons:file-type-neo4j'
+    },
 };
 
 export default TAGS;
